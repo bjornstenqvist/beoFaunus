@@ -1,1 +1,0 @@
-/usr/bin/c++  -funroll-loops -Wall -Wno-unknown-pragmas -Wextra -Wno-unused-parameter -Wno-reorder -O2 -g -D_ndebug  -rdynamic CMakeFiles/example_twobody.dir/twobody.cpp.o  -o twobody  -Wl,-rpath,/home/work/BackupWork/NewAllGo/src ../libfaunus.so ../libdocopt.a ../xdrfile/libxdrfile.a 
