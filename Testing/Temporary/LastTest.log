@@ -1,0 +1,3824 @@
+Start testing: Nov 27 12:32 CET
+----------------------------------------------------------
+1/13 Testing: unittests
+1/13 Test: unittests
+Command: "/home/bjorn/github/NewAllGo/src/examples/unittests"
+Directory: /home/bjorn/github/NewAllGo/src/examples
+"unittests" start time: Nov 27 12:32 CET
+Output:
+----------------------------------------------------------
+Single Particle Translation: unknown molecule 'max_iterations' was not added.
+Single Particle Translation: unknown molecule 'pol_threshold' was not added.
+===============================================================================
+All tests passed (1884 assertions in 13 test cases)
+
+<end of output>
+Test time =   0.13 sec
+----------------------------------------------------------
+Test Passed.
+"unittests" end time: Nov 27 12:32 CET
+"unittests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/13 Testing: example_penalty
+2/13 Test: example_penalty
+Command: "/home/bjorn/miniconda3/bin/python" "/home/bjorn/github/NewAllGo/src/examples/penalty.py"
+Directory: /home/bjorn/github/NewAllGo/src/examples
+"example_penalty" start time: Nov 27 12:32 CET
+Output:
+----------------------------------------------------------
+
+ ...................
+  MC Steps and Time  
+ *******************
+  Steps (macro micro tot)  10∙50000 = 500000
+  Time elapsed             0 min = 0 h
+
+ ....................................
+  Markov Move: P R O P A G A T O R S  
+ ************************************
+  Number of trials              500000
+  Relative time consumption     0
+  Acceptance                    0﹪
+  Runfraction                   100﹪
+  Total energy change           0 kT
+  Average energy                -2.71672
+  Initial energy                9.09044 kT
+  Current energy                -0.905997 kT
+  Changed                       -9.99644 kT
+  Absolute drift                4.28546e-14 kT
+  Relative drift                4.71425e-13﹪
+
+ ..........................................
+  Markov Move: Single Particle Translation  
+ ******************************************
+  Number of trials              500000
+  Relative time consumption     0.6103
+  Acceptance                    31.4514﹪
+  Runfraction                   100﹪
+  Total energy change           -9.99644 kT
+  Average moves/particle        500000
+  Displacement vector           1 1 1
+
+  Individual particle movement:
+
+           dp    Acc. ﹪     Nmoves      ⟨r²⟩/Å²     √⟨r²⟩/Å
+    A      0.5   31.5        500000      0.0156      0.125       
+Energy barrier: 15.9, delta histo: 4.38826
+Energy barrier: 16.1, delta histo: 3.23868
+Energy barrier: 16.55, delta histo: 2.48491
+Energy barrier: 16.6875, delta histo: 2.06686
+Energy barrier: 16.6437, delta histo: 1.87632
+Energy barrier: 16.4844, delta histo: 1.63929
+Energy barrier: 16.5469, delta histo: 1.39384
+
+ ...................
+  MC Steps and Time  
+ *******************
+  Steps (macro micro tot)  10∙100000 = 1000000
+  Time elapsed             0.0166667 min = 0.000277778 h
+
+ ....................................
+  Markov Move: P R O P A G A T O R S  
+ ************************************
+  Number of trials              1000000
+  Relative time consumption     0
+  Acceptance                    0﹪
+  Runfraction                   100﹪
+  Total energy change           0 kT
+  Average energy                11.0001
+  Initial energy                9.09044 kT
+  Current energy                11.9911 kT
+  Changed                       2.90067 kT
+  Absolute drift                -2.38103e-11 kT
+  Relative drift                -2.61927e-10﹪
+
+ ..........................................
+  Markov Move: Single Particle Translation  
+ ******************************************
+  Number of trials              1000000
+  Relative time consumption     0.590242
+  Acceptance                    73.0726﹪
+  Runfraction                   100﹪
+  Total energy change           -19833.9 kT
+  Average moves/particle        1000000
+  Displacement vector           1 1 1
+
+  Individual particle movement:
+
+           dp    Acc. ﹪     Nmoves      ⟨r²⟩/Å²     √⟨r²⟩/Å
+    A      0.5   73.1        1000000     0.0455      0.213       
+
+ ..................
+  Penalty Function  
+ ******************
+  Final f                  0.00078125
+  z-range                  16.5141
+
+ ...........
+  Unittests  
+ ***********
+  Unittest state                       unstable
+  Test file                            penalty.test (read)
+  Number of tests                      4
+  Number of failed tests               1
+
+                                       Stable      Current     Difference
+    relativeEnergyDrift                1.98566e-12 6.51482e-05 3.28093e+09﹪
+Energy barrier: 16.5141, delta histo: 3.49651
+Energy barrier: 16.5141, delta histo: 2.99573
+Energy barrier: 16.5141, delta histo: 2.94444
+Energy barrier: 16.5141, delta histo: 2.36085
+Energy barrier: 16.5141, delta histo: 2.00882
+Energy barrier: 16.5141, delta histo: 1.74808
+
+ ...................
+  MC Steps and Time  
+ *******************
+  Steps (macro micro tot)  10∙50000 = 500000
+  Time elapsed             0 min = 0 h
+
+ ....................................
+  Markov Move: P R O P A G A T O R S  
+ ************************************
+  Number of trials              500000
+  Relative time consumption     0
+  Acceptance                    0﹪
+  Runfraction                   100﹪
+  Total energy change           0 kT
+  Average energy                11.6449
+  Initial energy                11.2459 kT
+  Current energy                11.5342 kT
+  Changed                       0.288338 kT
+  Absolute drift                0 kT
+  Relative drift                0﹪
+
+ ..........................................
+  Markov Move: Single Particle Translation  
+ ******************************************
+  Number of trials              500000
+  Relative time consumption     0.603818
+  Acceptance                    73.3148﹪
+  Runfraction                   100﹪
+  Total energy change           0.157088 kT
+  Average moves/particle        500000
+  Displacement vector           1 1 1
+
+  Individual particle movement:
+
+           dp    Acc. ﹪     Nmoves      ⟨r²⟩/Å²     √⟨r²⟩/Å
+    A      0.5   73.3        500000      0.0458      0.214       
+<end of output>
+Test time =   3.64 sec
+----------------------------------------------------------
+Test Passed.
+"example_penalty" end time: Nov 27 12:32 CET
+"example_penalty" time elapsed: 00:00:03
+----------------------------------------------------------
+
+3/13 Testing: example_grand
+3/13 Test: example_grand
+Command: "/home/bjorn/miniconda3/bin/python" "/home/bjorn/github/NewAllGo/src/examples/grand.py"
+Directory: /home/bjorn/github/NewAllGo/src/examples
+"example_grand" start time: Nov 27 12:32 CET
+Output:
+----------------------------------------------------------
+Reading space state file 'state'. OK!
+  Resizing particle vector from 40 --> 148.
+  Read 148 particle(s).
+  Read 1 group(s).
+Seeding move random number generator.
+
+ .................
+  Atom Properties  
+ *****************
+  Number of entries:       3
+  Element info:
+    unk   Cl    Na    
+
+ ...............................
+  Simulation Space and Geometry  
+ *******************************
+  Boundary                 Sphere
+  Volume                   2.14466e+06 Å³ = 2144.66 nm³ = 2.14466e-21 liters
+  Radius                   80 Å
+  Number of particles      148
+  Electroneutrality        Yes 0
+  System sanity check      Passed
+  Number of molecule types 1
+  Groups:
+    1     [0-147]          salt        N/V = 6.90086e-05 Å⁻³ = 114.592 mM  
+
+ ............................................
+  Energy: Nonbonded N² - Coulomb+Hardsphere  
+ ********************************************
+  Temperature              298.15 K
+  Dielectric constant      80
+  T∂ϵ/ϵ∂T                  -1.37149
+  Bjerrum length           7.0057 Å
+  Hardsphere
+
+  Steps:    1 / 100000      Macrosteps/min: 50      ETA: Mon Nov 27 12:32:27 2017
+  Steps:    2 / 200000      Macrosteps/min: 50      ETA: Mon Nov 27 12:32:27 2017
+  Steps:    3 / 300000      Macrosteps/min: 50      ETA: Mon Nov 27 12:32:27 2017
+  Steps:    4 / 400000      Macrosteps/min: 50      ETA: Mon Nov 27 12:32:28 2017
+  Steps:    5 / 500000      Macrosteps/min: 50      ETA: Mon Nov 27 12:32:27 2017
+  Steps:    6 / 600000      Macrosteps/min: 50      ETA: Mon Nov 27 12:32:27 2017
+  Steps:    7 / 700000      Macrosteps/min: 50      ETA: Mon Nov 27 12:32:27 2017
+  Steps:    8 / 800000      Macrosteps/min: 50      ETA: Mon Nov 27 12:32:27 2017
+  Steps:    9 / 900000      Macrosteps/min: 50      ETA: Mon Nov 27 12:32:28 2017
+  Steps:   10 / 1000000     Macrosteps/min: 50      ETA: Mon Nov 27 12:32:28 2017
+
+ ...................
+  MC Steps and Time  
+ *******************
+  Steps (macro micro tot)  10∙100000 = 1000000
+  Time elapsed             0.183333 min = 0.00305556 h
+
+ ....................................
+  Markov Move: P R O P A G A T O R S  
+ ************************************
+  Number of trials              1000000
+  Relative time consumption     0
+  Acceptance                    0﹪
+  Runfraction                   100﹪
+  Total energy change           0 kT
+  Average energy                -32.7505
+  Initial energy                -22.7041 kT
+  Current energy                -30.4663 kT
+  Changed                       -7.76224 kT
+  Absolute drift                -3.23297e-13 kT
+  Relative drift                1.42396e-12﹪
+
+ ...................................
+  Markov Move: Grand Canonical Salt  
+ ***********************************
+  Number of trials              500595
+  Relative time consumption     0.331396
+  Acceptance                    67.8608﹪
+  Runfraction                   100﹪
+  Total energy change           -11.6407 kT
+  Number of GC species          
+
+    Ion       activity  ⟨c/M⟩     ⟨ɣ±⟩      ⟨N⟩       
+    Cl        0.05      0.060039  0.83279   77.543    
+    Na        0.05      0.060039  0.83279   77.543    
+
+ ..........................................
+  Markov Move: Single Particle Translation  
+ ******************************************
+  Number of trials              4852
+  Relative time consumption     0.00208156
+  Acceptance                    59.6043﹪
+  Runfraction                   1﹪
+  Total energy change           3.87846 kT
+  Average moves/particle        31
+  Displacement vector           1 1 1
+
+  Individual particle movement:
+
+           dp    Acc. ﹪     Nmoves      ⟨r²⟩/Å²     √⟨r²⟩/Å
+    Cl     50    58.8        2439        337         18.4        
+    Na     50    60.4        2413        354         18.8        
+
+ .........................................
+  Analysis: Multi Particle Widom Analysis  
+ *****************************************
+  Reference:                    doi:10/dkv4s6
+  Sample interval               20
+  Number of sample events       50000
+  Relative time                 0.279581
+  Number of insertions          750000
+  Excess chemical pot.          -0.188517 kT
+  Mean activity coefficient     0.828187
+  Ghost particles               Na Cl 
+
+ .............................................................
+  Analysis: Single particle Widom insertion w. charge scaling  
+ *************************************************************
+  Reference:                    doi:10/ft9bv9 + doi:10/dkv4s6
+  Sample interval               20
+  Number of sample events       50000
+  Relative time                 0.343684
+  Number of insertions          750000
+  Excess chemical potentials (kT)
+             total    elec.   hs             z        r
+    [0]    -0.1911   -0.2102   0.01916     -1.00      2.00
+    [1]    -0.1919    -0.211   0.01916      1.00      2.00
+
+ ...........
+  Unittests  
+ ***********
+  Unittest state                       unstable
+  Test file                            grand.test (read)
+  Number of tests                      9
+  Number of failed tests               0
+Writing to file 'grand.pqr'. OK!
+Writing space state file 'state'. OK!
+<end of output>
+Test time =  11.95 sec
+----------------------------------------------------------
+Test Passed.
+"example_grand" end time: Nov 27 12:32 CET
+"example_grand" time elapsed: 00:00:11
+----------------------------------------------------------
+
+4/13 Testing: example_stockmayer
+4/13 Test: example_stockmayer
+Command: "/home/bjorn/miniconda3/bin/python" "/home/bjorn/github/NewAllGo/src/examples/stockmayer.py"
+Directory: /home/bjorn/github/NewAllGo/src/examples
+"example_stockmayer" start time: Nov 27 12:32 CET
+Output:
+----------------------------------------------------------
+Reading space state file 'state'. OK!
+  Read 1000 particle(s).
+  Read 1 group(s).
+  Restoring random number generator state.
+  Steps:    1 / 50          Macrosteps/min: 8       ETA: Mon Nov 27 12:33:39 2017
+  Steps:    2 / 100         Macrosteps/min: 8       ETA: Mon Nov 27 12:33:39 2017
+  Steps:    3 / 150         Macrosteps/min: 8       ETA: Mon Nov 27 12:33:40 2017
+  Steps:    4 / 200         Macrosteps/min: 8       ETA: Mon Nov 27 12:33:40 2017
+  Steps:    5 / 250         Macrosteps/min: 8       ETA: Mon Nov 27 12:33:40 2017
+  Steps:    6 / 300         Macrosteps/min: 8       ETA: Mon Nov 27 12:33:39 2017
+  Steps:    7 / 350         Macrosteps/min: 8       ETA: Mon Nov 27 12:33:39 2017
+  Steps:    8 / 400         Macrosteps/min: 8       ETA: Mon Nov 27 12:33:40 2017
+  Steps:    9 / 450         Macrosteps/min: 8       ETA: Mon Nov 27 12:33:40 2017
+  Steps:   10 / 500         Macrosteps/min: 8       ETA: Mon Nov 27 12:33:40 2017
+
+ ...............................
+  Simulation Space and Geometry  
+ *******************************
+  Boundary                 Cuboid
+  Volume                   26022.8 Å³ = 26.0228 nm³ = 2.60228e-23 liters
+  Sidelengths              29.6336 29.6336 29.6336 (Å)
+  Scale directions         XYZ
+  Number of particles      1000
+  Electroneutrality        Yes 0
+  System sanity check      Passed
+  Number of molecule types 1
+  Groups:
+    1     [0-999]          sol         N/V = 0.0384279 Å⁻³ = 63811.1 mM  
+
+ .........................................................
+  Energy: Nonbonded N² - Lennard-Jones+DipoleDipole-Wolf  
+ *********************************************************
+  Lennard-Jones pair parameters:
+
+       dip<->dip  σ =   2.886 Å  ϵ =  0.7503 kT = 1.97 kJ/mol
+  Temperature              315.8 K
+  Dielectric constant      1
+  T∂ϵ/ϵ∂T                  -116.214
+  Bjerrum length           529.132 Å
+  Cutoff                   14.4315 Å
+  alpha                    0.21
+
+ ....................................
+  Markov Move: P R O P A G A T O R S  
+ ************************************
+  Number of trials              500
+  Relative time consumption     0
+  Acceptance                    0﹪
+  Runfraction                   100﹪
+  Total energy change           0 kT
+  Average energy                -8244.32
+  Initial energy                -8220.27 kT
+  Current energy                -8281.65 kT
+  Changed                       -61.3799 kT
+  Absolute drift                -7.45786e-11 kT
+  Relative drift                9.07252e-13﹪
+
+ .......................................
+  Markov Move: Single Particle Rotation  
+ ***************************************
+  Number of trials              255000
+  Relative time consumption     0.472051
+  Acceptance                    33.9812﹪
+  Runfraction                   100﹪
+  Total energy change           -40.872 kT
+  Average moves/particle        255
+
+  Individual particle rotation:
+
+           dp    Acc. ﹪     ⟨dθ²⟩/°     √⟨dθ²⟩/°
+    dip    270   34          2.48e+04    157         
+
+ ..........................................
+  Markov Move: Single Particle Translation  
+ ******************************************
+  Number of trials              245000
+  Relative time consumption     0.455182
+  Acceptance                    32.0196﹪
+  Runfraction                   100﹪
+  Total energy change           -20.5078 kT
+  Average moves/particle        245
+  Displacement vector           1 1 1
+
+  Individual particle movement:
+
+           dp    Acc. ﹪     Nmoves      ⟨r²⟩/Å²     √⟨r²⟩/Å
+    dip    0.7   32          245000      0.031       0.176       
+
+ ...........
+  Unittests  
+ ***********
+  Unittest state                       unstable
+  Test file                            stockmayer.test (read)
+  Number of tests                      4
+  Number of failed tests               0
+
+ .............................................
+  Analysis: Atomic Pair Distribution Function  
+ *********************************************
+  Sample interval               10
+  Number of sample events       50
+  Relative time                 0.0252745
+
+ .........................
+  Analysis: System energy  
+ *************************
+  Sample interval               20
+  Number of sample events       25
+  Relative time                 0.0082998
+
+ ..........................
+  Analysis: KirkwoodFactor  
+ **************************
+  Sample interval               20
+  Number of sample events       25
+  Relative time                 0.0378309
+
+ .............................
+  Analysis: MultipoleAnalysis  
+ *****************************
+  Sample interval               20
+  Number of sample events       25
+Writing to file 'stockmayer.pqr'. OK!
+Writing space state file 'state'. OK!
+<end of output>
+Test time =  72.56 sec
+----------------------------------------------------------
+Test Passed.
+"example_stockmayer" end time: Nov 27 12:33 CET
+"example_stockmayer" time elapsed: 00:01:12
+----------------------------------------------------------
+
+5/13 Testing: example_polymers
+5/13 Test: example_polymers
+Command: "/home/bjorn/miniconda3/bin/python" "/home/bjorn/github/NewAllGo/src/examples/polymers.py"
+Directory: /home/bjorn/github/NewAllGo/src/examples
+"example_polymers" start time: Nov 27 12:33 CET
+Output:
+----------------------------------------------------------
+.......................................................................
+  Welcome to FAUNUS - A Framework for Molecule Simulation.
+  Copyright (C) 2002-2017 Mikael Lund
+
+  This program is free software; you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation; either version 2 of the License, or
+  (at your option) any later version.
+
+   ___________                               _________
+   \_   _____/_____    __ __   ____   __ __ /   _____/
+    |    __)  \__  \  |  |  \ /    \ |  |  \\_____  \
+    |     \    / __ \_|  |  /|   |  \|  |  //        \
+    \___  /   (____  /|____/ |___|  /|____//_______  /
+        \/         \/             \/               \/
+
+  Developed by:
+    Mikael Lund, Björn Persson, Martin Trulsson,
+    Ondřej Maršálek, Christophe Labbez, Andre Teixeira,
+    Anıl Kurut, Chris Evers, Robert Vácha, Axel Thuresson,
+    Björn Stenqvist, João Henriques, Alexei Abrikossov,
+    Giulio Tesei, Lukáš Sukeník, Niels Kouwenhoven
+
+  References:
+    http://doi.org/nvn
+    http://doi.org/dfqgch
+
+  Library build details:
+    Compiled on Nov 27 2017 12:29:53
+    Git commit f5e8ecc (2017-11-26 15:01:11 +0100)
+***********************************************************************
+Reading space state file 'state'. OK!
+  Read 64 particle(s).
+  Read 9 group(s).
+  Restoring random number generator state.
+
+ .................
+  Atom Properties  
+ *****************
+  Number of entries:       4
+  Element info:
+    unk   Cl    MM    Na    
+
+ ...............................
+  Simulation Space and Geometry  
+ *******************************
+  Boundary                 Sphere
+  Volume                   419787 Å³ = 419.787 nm³ = 4.19787e-22 liters
+  Radius                   46.4494 Å
+  Number of particles      64
+  Electroneutrality        Yes 0
+  System sanity check      Passed
+  Number of molecule types 2
+  Groups:
+    1     [0-31]           counterions N/V = 7.62291e-05 Å⁻³ = 126.581 mM  
+    2     [32-35]          polymer     
+    3     [36-39]          polymer     
+    4     [40-43]          polymer     
+    5     [44-47]          polymer     
+    6     [48-51]          polymer     
+    7     [52-55]          polymer     
+    8     [56-59]          polymer     
+    9     [60-63]          polymer     
+
+ ............................................
+  Energy: Nonbonded N² - Coulomb+Hardsphere  
+ ********************************************
+  Temperature              298.15 K
+  Dielectric constant      80
+  T∂ϵ/ϵ∂T                  -1.37149
+  Bjerrum length           7.0057 Å
+  Hardsphere
+
+ ...........................
+  Energy: External Pressure  
+ ***************************
+  Pressure       113.2 mM = 280620 Pa = 2.7695 atm
+  Number of molecules      40 (8 molecular + 32 atomic)
+
+ ..........................
+  Energy: Bonded particles  
+ **************************
+  Look for group-group bonds:   false
+    i      j      
+    32     33     Harmonic: k=0.0557 kT/Å² req=0 Å
+    33     34     Harmonic: k=0.0557 kT/Å² req=0 Å
+    34     35     Harmonic: k=0.0557 kT/Å² req=0 Å
+    36     37     Harmonic: k=0.0557 kT/Å² req=0 Å
+    37     38     Harmonic: k=0.0557 kT/Å² req=0 Å
+    38     39     Harmonic: k=0.0557 kT/Å² req=0 Å
+    40     41     Harmonic: k=0.0557 kT/Å² req=0 Å
+    41     42     Harmonic: k=0.0557 kT/Å² req=0 Å
+    42     43     Harmonic: k=0.0557 kT/Å² req=0 Å
+    44     45     Harmonic: k=0.0557 kT/Å² req=0 Å
+    45     46     Harmonic: k=0.0557 kT/Å² req=0 Å
+    46     47     Harmonic: k=0.0557 kT/Å² req=0 Å
+    48     49     Harmonic: k=0.0557 kT/Å² req=0 Å
+    49     50     Harmonic: k=0.0557 kT/Å² req=0 Å
+    50     51     Harmonic: k=0.0557 kT/Å² req=0 Å
+    52     53     Harmonic: k=0.0557 kT/Å² req=0 Å
+    53     54     Harmonic: k=0.0557 kT/Å² req=0 Å
+    54     55     Harmonic: k=0.0557 kT/Å² req=0 Å
+    56     57     Harmonic: k=0.0557 kT/Å² req=0 Å
+    57     58     Harmonic: k=0.0557 kT/Å² req=0 Å
+    58     59     Harmonic: k=0.0557 kT/Å² req=0 Å
+    60     61     Harmonic: k=0.0557 kT/Å² req=0 Å
+    61     62     Harmonic: k=0.0557 kT/Å² req=0 Å
+    62     63     Harmonic: k=0.0557 kT/Å² req=0 Å
+
+ .......................
+  MC Simulation Begins!  
+ ***********************
+  Steps:    1 / 20000       Macrosteps/min: 32      ETA: Mon Nov 27 12:33:58 2017
+  Steps:    2 / 40000       Macrosteps/min: 33      ETA: Mon Nov 27 12:33:58 2017
+  Steps:    3 / 60000       Macrosteps/min: 33      ETA: Mon Nov 27 12:33:58 2017
+  Steps:    4 / 80000       Macrosteps/min: 33      ETA: Mon Nov 27 12:33:57 2017
+  Steps:    5 / 100000      Macrosteps/min: 33      ETA: Mon Nov 27 12:33:57 2017
+  Steps:    6 / 120000      Macrosteps/min: 33      ETA: Mon Nov 27 12:33:58 2017
+  Steps:    7 / 140000      Macrosteps/min: 33      ETA: Mon Nov 27 12:33:58 2017
+  Steps:    8 / 160000      Macrosteps/min: 33      ETA: Mon Nov 27 12:33:58 2017
+  Steps:    9 / 180000      Macrosteps/min: 33      ETA: Mon Nov 27 12:33:57 2017
+  Steps:   10 / 200000      Macrosteps/min: 33      ETA: Mon Nov 27 12:33:58 2017
+
+ ...................
+  MC Steps and Time  
+ *******************
+  Steps (macro micro tot)  10∙20000 = 200000
+  Time elapsed             0.283333 min = 0.00472222 h
+
+ ....................................
+  Markov Move: P R O P A G A T O R S  
+ ************************************
+  Number of trials              200000
+  Relative time consumption     0
+  Acceptance                    0﹪
+  Runfraction                   100﹪
+  Total energy change           0 kT
+  Average energy                -425.347
+  Initial energy                -422.98 kT
+  Current energy                -421.268 kT
+  Changed                       1.71191 kT
+  Absolute drift                5.71845e-11 kT
+  Relative drift                -1.35194e-11﹪
+
+ ..........................................
+  Markov Move: Single Particle Translation  
+ ******************************************
+  Number of trials              1280576
+  Relative time consumption     0.586713
+  Acceptance                    18.525﹪
+  Runfraction                   100﹪
+  Total energy change           -76.3797 kT
+  Average moves/particle        75328
+  Displacement vector           1 1 1
+
+  Individual particle movement:
+
+           dp    Acc. ﹪     Nmoves      ⟨r²⟩/Å²     √⟨r²⟩/Å
+    Cl     110   17.3        634848      364         19.1        
+    MM     10    19.7        645728      3.85        1.96        
+
+ .........................
+  Markov Move: CrankShaft  
+ *************************
+  Number of trials              320808
+  Relative time consumption     0.1481
+  Acceptance                    69.588﹪
+  Runfraction                   100﹪
+  Total energy change           4.57383 kT
+  Displacement parameter        6.3
+  Min/max length to move        2 10
+  Move Statistics:
+    Id                  Acc. ﹪   Nmoves    √⟨msq²⟩/Å  
+    polymer             69.6      320808    10.1      
+
+ ...........................................
+  Markov Move: Isobaric Volume Fluctuations  
+ *******************************************
+  Number of trials              3932
+  Relative time consumption     0.0159662
+  Acceptance                    15.8444﹪
+  Runfraction                   10﹪
+  Total energy change           4.45613 kT
+  Displacement parameter        2
+  Number of molecules           40 (8 molecular + 32 atomic)
+  Pressure                      113.2 mM = 280620 Pa = 2.7695 atm
+  Temperature                   298.15 K
+  Mean displacement             ∛√⟨dp²⟩ = 33.7744 Å
+  Osmotic coefficient           0.836328
+
+                          ⟨V⟩            ∛⟨V⟩             ⟨1/V⟩             ⟨N/V⟩
+    Averages        503096 Å³       79.5336 Å   2.03779e-06 1/ Å³       135.354 mM
+
+ .........................................
+  Markov Move: Group Rotation/Translation  
+ *****************************************
+  Number of trials              320448
+  Relative time consumption     0.0884223
+  Acceptance                    14.4335﹪
+  Runfraction                   100﹪
+  Total energy change           184.44 kT
+  Max. translation              ±25 Å
+  Max. rotation                 ±171.887°
+  Move Statistics:
+    Group name          Acc. ﹪     √⟨dR²⟩/Å     √⟨dθ²⟩/°
+    polymer             14.4        8.25        37.6        
+
+ .................................
+  Markov Move: Polymer Pivot Move  
+ *********************************
+  Number of trials              319632
+  Relative time consumption     0.142073
+  Acceptance                    73.6732﹪
+  Runfraction                   100﹪
+  Total energy change           -115.379 kT
+  Displacement parameter        6.3
+  Min/max length to move        1 1000
+  Move Statistics:
+    Id                  Acc. ﹪   Nmoves    √⟨msq²⟩/Å  
+    polymer             73.7      319632    9.91      
+
+ ................................................
+  Analysis: Molecular Pair Distribution Function  
+ ************************************************
+  Sample interval               20
+  Number of sample events       10000
+  Relative time                 0.00168805
+
+ .........................
+  Analysis: Polymer Shape  
+ *************************
+  Sample interval               10
+  Number of sample events       20000
+  Relative time                 0.00112546
+
+    Group     ⟨Rg²⟩     ⟨Rg²⟩-⟨Rg⟩² √⟨Rg²⟩  √⟨Rgx²⟩   √⟨Rgy²⟩   √⟨Rgz²⟩   √⟨Re²⟩    ⟨Re²⟩/⟨Rg²⟩
+    polymer   46.1      1.058       6.789   3.92      3.912     3.927     15.88     5.469
+
+ ...................................
+  Analysis: XTC trajectory reporter  
+ ***********************************
+  Reference:                    http://manual.gromacs.org/online/xtc.html
+  Sample interval               10
+  Number of sample events       20000
+  Relative time                 0.00774328
+  Filename                      polymers.xtc
+
+ ...........
+  Unittests  
+ ***********
+  Unittest state                       unstable
+  Test file                            polymers.test (read)
+  Number of tests                      14
+  Number of failed tests               0
+Writing to file 'polymers.pqr'. OK!
+Writing space state file 'state'. OK!
+Writing to file 'bondlist.tcl'. OK!
+<end of output>
+Test time =  17.98 sec
+----------------------------------------------------------
+Test Passed.
+"example_polymers" end time: Nov 27 12:33 CET
+"example_polymers" time elapsed: 00:00:17
+----------------------------------------------------------
+
+6/13 Testing: example_gcmol
+6/13 Test: example_gcmol
+Command: "/home/bjorn/miniconda3/bin/python" "/home/bjorn/github/NewAllGo/src/examples/gcmol.py"
+Directory: /home/bjorn/github/NewAllGo/src/examples
+"example_gcmol" start time: Nov 27 12:33 CET
+Output:
+----------------------------------------------------------
+Reading space state file 'state'. OK!
+  Resizing particle vector from 600 --> 630.
+  Read 630 particle(s).
+  Read 210 group(s).
+  Restoring random number generator state.
+
+ .................
+  Atom Properties  
+ *****************
+  Number of entries:       3
+  Element info:
+    unk   HW    OW    
+
+ ............................................................
+  Energy: Nonbonded N² - CoulombWolf/Yonezawa+Lennard-Jones  
+ ************************************************************
+  Temperature              298.15 K
+  Dielectric constant      1
+  T∂ϵ/ϵ∂T                  -109.719
+  Bjerrum length           560.456 Å
+  More info                doi:10/j97
+  Cut-off                  9 Å
+  Lennard-Jones pair parameters:
+
+         HW<->HW  σ =       0 Å  ϵ =       0 kT = 0 kJ/mol
+         OW<->HW  σ =     1.6 Å  ϵ =       0 kT = 0 kJ/mol
+         OW<->OW  σ =     3.2 Å  ϵ =  0.2622 kT = 0.65 kJ/mol
+
+ .......................
+  MC Simulation Begins!  
+ ***********************
+  Steps:    1 / 100000      Macrosteps/min: 21      ETA: Mon Nov 27 12:34:26 2017
+  Steps:    2 / 200000      Macrosteps/min: 22      ETA: Mon Nov 27 12:34:25 2017
+  Steps:    3 / 300000      Macrosteps/min: 22      ETA: Mon Nov 27 12:34:24 2017
+  Steps:    4 / 400000      Macrosteps/min: 22      ETA: Mon Nov 27 12:34:24 2017
+  Steps:    5 / 500000      Macrosteps/min: 22      ETA: Mon Nov 27 12:34:25 2017
+  Steps:    6 / 600000      Macrosteps/min: 22      ETA: Mon Nov 27 12:34:24 2017
+  Steps:    7 / 700000      Macrosteps/min: 22      ETA: Mon Nov 27 12:34:24 2017
+  Steps:    8 / 800000      Macrosteps/min: 22      ETA: Mon Nov 27 12:34:25 2017
+  Steps:    9 / 900000      Macrosteps/min: 22      ETA: Mon Nov 27 12:34:24 2017
+  Steps:   10 / 1000000     Macrosteps/min: 22      ETA: Mon Nov 27 12:34:25 2017
+
+ ...................
+  MC Steps and Time  
+ *******************
+  Steps (macro micro tot)  10∙100000 = 1000000
+  Time elapsed             0.433333 min = 0.00722222 h
+
+ ...............................
+  Simulation Space and Geometry  
+ *******************************
+  Boundary                 Cuboid
+  Volume                   6890.24 Å³ = 6.89024 nm³ = 6.89024e-24 liters
+  Sidelengths              19.0288 19.0288 19.0288 (Å)
+  Scale directions         XYZ
+  Number of particles      621
+  Electroneutrality        Yes 0
+  System sanity check      Passed
+  Number of molecule types 1
+  Groups:
+    1     [0-2]            water       
+    2     [3-5]            water       
+    3     [6-8]            water       
+    4     [9-11]           water       
+    5     [12-14]          water       
+    6     [15-17]          water       
+    7     [18-20]          water       
+    8     [21-23]          water       
+    9     [24-26]          water       
+    10    [27-29]          water       
+    11    [30-32]          water       
+    12    [33-35]          water       
+    13    [36-38]          water       
+    14    [39-41]          water       
+    15    [42-44]          water       
+    16    [45-47]          water       
+    17    [48-50]          water       
+    18    [51-53]          water       
+    19    [54-56]          water       
+    20    [57-59]          water       
+    21    [60-62]          water       
+    22    [63-65]          water       
+    23    [66-68]          water       
+    24    [69-71]          water       
+    25    [72-74]          water       
+    26    [75-77]          water       
+    27    [78-80]          water       
+    28    [81-83]          water       
+    29    [84-86]          water       
+    30    [87-89]          water       
+    31    [90-92]          water       
+    32    [93-95]          water       
+    33    [96-98]          water       
+    34    [99-101]         water       
+    35    [102-104]        water       
+    36    [105-107]        water       
+    37    [108-110]        water       
+    38    [111-113]        water       
+    39    [114-116]        water       
+    40    [117-119]        water       
+    41    [120-122]        water       
+    42    [123-125]        water       
+    43    [126-128]        water       
+    44    [129-131]        water       
+    45    [132-134]        water       
+    46    [135-137]        water       
+    47    [138-140]        water       
+    48    [141-143]        water       
+    49    [144-146]        water       
+    50    [147-149]        water       
+    51    [150-152]        water       
+    52    [153-155]        water       
+    53    [156-158]        water       
+    54    [159-161]        water       
+    55    [162-164]        water       
+    56    [165-167]        water       
+    57    [168-170]        water       
+    58    [171-173]        water       
+    59    [174-176]        water       
+    60    [177-179]        water       
+    61    [180-182]        water       
+    62    [183-185]        water       
+    63    [186-188]        water       
+    64    [189-191]        water       
+    65    [192-194]        water       
+    66    [195-197]        water       
+    67    [198-200]        water       
+    68    [201-203]        water       
+    69    [204-206]        water       
+    70    [207-209]        water       
+    71    [210-212]        water       
+    72    [213-215]        water       
+    73    [216-218]        water       
+    74    [219-221]        water       
+    75    [222-224]        water       
+    76    [225-227]        water       
+    77    [228-230]        water       
+    78    [231-233]        water       
+    79    [234-236]        water       
+    80    [237-239]        water       
+    81    [240-242]        water       
+    82    [243-245]        water       
+    83    [246-248]        water       
+    84    [249-251]        water       
+    85    [252-254]        water       
+    86    [255-257]        water       
+    87    [258-260]        water       
+    88    [261-263]        water       
+    89    [264-266]        water       
+    90    [267-269]        water       
+    91    [270-272]        water       
+    92    [273-275]        water       
+    93    [276-278]        water       
+    94    [279-281]        water       
+    95    [282-284]        water       
+    96    [285-287]        water       
+    97    [288-290]        water       
+    98    [291-293]        water       
+    99    [294-296]        water       
+    100   [297-299]        water       
+    101   [300-302]        water       
+    102   [303-305]        water       
+    103   [306-308]        water       
+    104   [309-311]        water       
+    105   [312-314]        water       
+    106   [315-317]        water       
+    107   [318-320]        water       
+    108   [321-323]        water       
+    109   [324-326]        water       
+    110   [327-329]        water       
+    111   [330-332]        water       
+    112   [333-335]        water       
+    113   [336-338]        water       
+    114   [339-341]        water       
+    115   [342-344]        water       
+    116   [345-347]        water       
+    117   [348-350]        water       
+    118   [351-353]        water       
+    119   [354-356]        water       
+    120   [357-359]        water       
+    121   [360-362]        water       
+    122   [363-365]        water       
+    123   [366-368]        water       
+    124   [369-371]        water       
+    125   [372-374]        water       
+    126   [375-377]        water       
+    127   [378-380]        water       
+    128   [381-383]        water       
+    129   [384-386]        water       
+    130   [387-389]        water       
+    131   [390-392]        water       
+    132   [393-395]        water       
+    133   [396-398]        water       
+    134   [399-401]        water       
+    135   [402-404]        water       
+    136   [405-407]        water       
+    137   [408-410]        water       
+    138   [411-413]        water       
+    139   [414-416]        water       
+    140   [417-419]        water       
+    141   [420-422]        water       
+    142   [423-425]        water       
+    143   [426-428]        water       
+    144   [429-431]        water       
+    145   [432-434]        water       
+    146   [435-437]        water       
+    147   [438-440]        water       
+    148   [441-443]        water       
+    149   [444-446]        water       
+    150   [447-449]        water       
+    151   [450-452]        water       
+    152   [453-455]        water       
+    153   [456-458]        water       
+    154   [459-461]        water       
+    155   [462-464]        water       
+    156   [465-467]        water       
+    157   [468-470]        water       
+    158   [471-473]        water       
+    159   [474-476]        water       
+    160   [477-479]        water       
+    161   [480-482]        water       
+    162   [483-485]        water       
+    163   [486-488]        water       
+    164   [489-491]        water       
+    165   [492-494]        water       
+    166   [495-497]        water       
+    167   [498-500]        water       
+    168   [501-503]        water       
+    169   [504-506]        water       
+    170   [507-509]        water       
+    171   [510-512]        water       
+    172   [513-515]        water       
+    173   [516-518]        water       
+    174   [519-521]        water       
+    175   [522-524]        water       
+    176   [525-527]        water       
+    177   [528-530]        water       
+    178   [531-533]        water       
+    179   [534-536]        water       
+    180   [537-539]        water       
+    181   [540-542]        water       
+    182   [543-545]        water       
+    183   [546-548]        water       
+    184   [549-551]        water       
+    185   [552-554]        water       
+    186   [555-557]        water       
+    187   [558-560]        water       
+    188   [561-563]        water       
+    189   [564-566]        water       
+    190   [567-569]        water       
+    191   [570-572]        water       
+    192   [573-575]        water       
+    193   [576-578]        water       
+    194   [579-581]        water       
+    195   [582-584]        water       
+    196   [585-587]        water       
+    197   [588-590]        water       
+    198   [591-593]        water       
+    199   [594-596]        water       
+    200   [597-599]        water       
+    201   [600-602]        water       
+    202   [603-605]        water       
+    203   [606-608]        water       
+    204   [609-611]        water       
+    205   [612-614]        water       
+    206   [615-617]        water       
+    207   [618-620]        water       
+
+ ....................................
+  Markov Move: P R O P A G A T O R S  
+ ************************************
+  Number of trials              1000000
+  Relative time consumption     0
+  Acceptance                    0﹪
+  Runfraction                   100﹪
+  Total energy change           0 kT
+  Average energy                -61293.2
+  Initial energy                -61685.1 kT
+  Current energy                -60698.5 kT
+  Changed                       986.59 kT
+  Absolute drift                -1.45519e-11 kT
+  Relative drift                2.35906e-14﹪
+
+ ..............................
+  Markov Move: Grand Canonical  
+ ******************************
+  Number of trials              499519
+  Relative time consumption     0.68386
+  Acceptance                    0.0282272﹪
+  Runfraction                   100﹪
+  Total energy change           890.8 kT
+  Accepted insertions           69
+  Accepted deletions            72
+  Flux (Nins/Ndel)              0.958333
+
+  Molecule/Atom                    a (mol/l)                     c (mol/l)                     ɣ=a/c                        
+  ------------------------------------------------------------------------------------------------------------------------
+  water                            0.0009386                     50.3402                       1.86452e-05                   
+
+
+ ...............
+  Molecule list  
+ ***************
+
+  Molecule         activity       atoms          atomic         
+  ------------------------------------------------------------
+  water            0.0009386      3              false
+
+ .......................
+  Molecule Combinations  
+ ***********************
+  Number of entries:       1
+  Element info:
+    water:               water     
+
+
+ .........................................
+  Markov Move: Group Rotation/Translation  
+ *****************************************
+  Number of trials              101964
+  Relative time consumption     0.301634
+  Acceptance                    28.4679﹪
+  Runfraction                   0.1﹪
+  Total energy change           95.7907 kT
+  Max. translation              ±0.25 Å
+  Max. rotation                 ±14.3239°
+  Move Statistics:
+    Group name          Acc. ﹪     √⟨dR²⟩/Å     √⟨dθ²⟩/°
+    water               28.5        0.12        4.1         
+
+ ...........
+  Unittests  
+ ***********
+  Unittest state                       unstable
+  Test file                            gcmol.test (read)
+  Number of tests                      9
+  Number of failed tests               0
+
+<end of output>
+Test time =  26.48 sec
+----------------------------------------------------------
+Test Passed.
+"example_gcmol" end time: Nov 27 12:34 CET
+"example_gcmol" time elapsed: 00:00:26
+----------------------------------------------------------
+
+7/13 Testing: example_slitpolymer
+7/13 Test: example_slitpolymer
+Command: "/home/bjorn/miniconda3/bin/python" "/home/bjorn/github/NewAllGo/src/examples/slitpolymer.py"
+Directory: /home/bjorn/github/NewAllGo/src/examples
+"example_slitpolymer" start time: Nov 27 12:34 CET
+Output:
+----------------------------------------------------------
+.......................................................................
+  Welcome to FAUNUS - A Framework for Molecule Simulation.
+  Copyright (C) 2002-2017 Mikael Lund
+
+  This program is free software; you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation; either version 2 of the License, or
+  (at your option) any later version.
+
+   ___________                               _________
+   \_   _____/_____    __ __   ____   __ __ /   _____/
+    |    __)  \__  \  |  |  \ /    \ |  |  \\_____  \
+    |     \    / __ \_|  |  /|   |  \|  |  //        \
+    \___  /   (____  /|____/ |___|  /|____//_______  /
+        \/         \/             \/               \/
+
+  Developed by:
+    Mikael Lund, Björn Persson, Martin Trulsson,
+    Ondřej Maršálek, Christophe Labbez, Andre Teixeira,
+    Anıl Kurut, Chris Evers, Robert Vácha, Axel Thuresson,
+    Björn Stenqvist, João Henriques, Alexei Abrikossov,
+    Giulio Tesei, Lukáš Sukeník, Niels Kouwenhoven
+
+  References:
+    http://doi.org/nvn
+    http://doi.org/dfqgch
+
+  Library build details:
+    Compiled on Nov 27 2017 12:30:18
+    Git commit f5e8ecc (2017-11-26 15:01:11 +0100)
+***********************************************************************
+Ionic s = 0
+Reading space state file 'state'. OK!
+  Read 10 particle(s).
+  Read 1 group(s).
+
+ ...............................
+  Simulation Space and Geometry  
+ *******************************
+  Boundary                 Cuboid (XY-periodicity)
+  Volume                   1.386e+07 Å³ = 13860 nm³ = 1.386e-20 liters
+  Sidelengths              300 300 154 (Å)
+  Scale directions         XYZ
+  Number of particles      10
+  Electroneutrality        NO! 2.02767
+  System sanity check      Passed
+  Number of molecule types 1
+  Groups:
+    1     [0-9]            polymer     
+
+ ...........................................
+  Energy: External Potential (Gouy-Chapman)  
+ *******************************************
+  Temperature                   298 K
+  Dielectric constant           78.9
+  T∂ϵ/ϵ∂T                       -1.38991
+  Bjerrum length                7.10694 Å
+  Ionic strength                0.0685059 mol/l
+  Debye length, 1/κ             11.6493 11.6493 Å
+  Surface potential             -2 kT/e = -0.0513596 V=J/C
+  Surface charge density        -0.036196 C/m²
+  Area per charge               -442.639 Å²
+  GC-coefficient Γo             -0.462117
+  Linearize                     yes
+  Surface position              77 Å
+
+ .......................
+  MC Simulation Begins!  
+ ***********************
+  Steps:    1 / 1000000     Macrosteps/min: 22      ETA: Mon Nov 27 12:34:51 2017
+  Steps:    2 / 2000000     Macrosteps/min: 22      ETA: Mon Nov 27 12:34:51 2017
+  Steps:    3 / 3000000     Macrosteps/min: 22      ETA: Mon Nov 27 12:34:51 2017
+  Steps:    4 / 4000000     Macrosteps/min: 22      ETA: Mon Nov 27 12:34:52 2017
+  Steps:    5 / 5000000     Macrosteps/min: 22      ETA: Mon Nov 27 12:34:51 2017
+  Steps:    6 / 6000000     Macrosteps/min: 22      ETA: Mon Nov 27 12:34:51 2017
+  Steps:    7 / 7000000     Macrosteps/min: 22      ETA: Mon Nov 27 12:34:52 2017
+  Steps:    8 / 8000000     Macrosteps/min: 22      ETA: Mon Nov 27 12:34:51 2017
+  Steps:    9 / 9000000     Macrosteps/min: 22      ETA: Mon Nov 27 12:34:51 2017
+  Steps:   10 / 10000000    Macrosteps/min: 22      ETA: Mon Nov 27 12:34:52 2017
+Writing space state file 'state'. OK!
+Writing to file 'confout.pqr'. OK!
+
+ ...................
+  MC Steps and Time  
+ *******************
+  Steps (macro micro tot)  10∙1000000 = 10000000
+  Time elapsed             0.45 min = 0.0075 h
+
+ ....................................
+  Markov Move: P R O P A G A T O R S  
+ ************************************
+  Number of trials              10000000
+  Relative time consumption     0
+  Acceptance                    0﹪
+  Runfraction                   100﹪
+  Total energy change           0 kT
+  Average energy                -0.907
+  Initial energy                -4.62683e-05 kT
+  Current energy                -2.68059 kT
+  Changed                       -2.68055 kT
+  Absolute drift                2.22045e-14 kT
+  Relative drift                -4.79907e-08﹪
+
+ .........................
+  Markov Move: CrankShaft  
+ *************************
+  Number of trials              2501870
+  Relative time consumption     0.18926
+  Acceptance                    94.1781﹪
+  Runfraction                   100﹪
+  Total energy change           -118.434 kT
+  Displacement parameter        6
+  Min/max length to move        1 6
+  Move Statistics:
+    Id                  Acc. ﹪   Nmoves    √⟨msq²⟩/Å  
+    polymer             94.2      2501870   9.61      
+
+ .........................................
+  Markov Move: Group Rotation/Translation  
+ *****************************************
+  Number of trials              2498518
+  Relative time consumption     0.165559
+  Acceptance                    56.262﹪
+  Runfraction                   100﹪
+  Total energy change           164.891 kT
+  Max. translation              ±50 Å
+  Max. rotation                 ±171.887°
+  Move Statistics:
+    Group name          Acc. ﹪     √⟨dR²⟩/Å     √⟨dθ²⟩/°
+    polymer             56.3        36.5        74.3        
+
+ .................................
+  Markov Move: Polymer Pivot Move  
+ *********************************
+  Number of trials              2501060
+  Relative time consumption     0.202252
+  Acceptance                    91.5769﹪
+  Runfraction                   100﹪
+  Total energy change           271.227 kT
+  Displacement parameter        6
+  Min/max length to move        1 6
+  Move Statistics:
+    Id                  Acc. ﹪   Nmoves    √⟨msq²⟩/Å  
+    polymer             91.6      2501060   16.7      
+
+ .......................................
+  Markov Move: Linear Polymer Reptation  
+ ***************************************
+  Number of trials              2498552
+  Relative time consumption     0.167863
+  Acceptance                    90.9562﹪
+  Runfraction                   100﹪
+  Total energy change           -320.365 kT
+  Bondlength                    4.9 Å (-1 = automatic)
+  Move Statistics:
+    Id                  Acc. ﹪   Nmoves    √⟨msq²⟩/Å  
+    polymer             91        2498552   1.53      
+
+ .........................
+  Analysis: Polymer Shape  
+ *************************
+  Sample interval               10
+  Number of sample events       1000000
+
+    Group     ⟨Rg²⟩     ⟨Rg²⟩-⟨Rg⟩² √⟨Rg²⟩  √⟨Rgx²⟩   √⟨Rgy²⟩   √⟨Rgz²⟩   √⟨Re²⟩    ⟨Re²⟩/⟨Rg²⟩
+    polymer   38.78     1.743       6.227   3.65      3.647     3.487     14.45     5.384
+
+ ...............................
+  Simulation Space and Geometry  
+ *******************************
+  Boundary                 Cuboid (XY-periodicity)
+  Volume                   1.386e+07 Å³ = 13860 nm³ = 1.386e-20 liters
+  Sidelengths              300 300 154 (Å)
+  Scale directions         XYZ
+  Number of particles      10
+  Electroneutrality        NO! 2.02767
+  System sanity check      Passed
+  Number of molecule types 1
+  Groups:
+    1     [0-9]            polymer     
+
+ ...........
+  Unittests  
+ ***********
+  Unittest state                       unstable
+  Test file                            slitpolymer.test (read)
+  Number of tests                      13
+  Number of failed tests               0
+<end of output>
+Test time =  27.14 sec
+----------------------------------------------------------
+Test Passed.
+"example_slitpolymer" end time: Nov 27 12:34 CET
+"example_slitpolymer" time elapsed: 00:00:27
+----------------------------------------------------------
+
+8/13 Testing: example_membrane
+8/13 Test: example_membrane
+Command: "/home/bjorn/github/NewAllGo/src/examples/membrane.run"
+Directory: /home/bjorn/github/NewAllGo/src/examples
+"example_membrane" start time: Nov 27 12:34 CET
+Output:
+----------------------------------------------------------
+.......................................................................
+  Welcome to FAUNUS - A Framework for Molecule Simulation.
+  Copyright (C) 2002-2017 Mikael Lund
+
+  This program is free software; you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation; either version 2 of the License, or
+  (at your option) any later version.
+
+   ___________                               _________
+   \_   _____/_____    __ __   ____   __ __ /   _____/
+    |    __)  \__  \  |  |  \ /    \ |  |  \\_____  \
+    |     \    / __ \_|  |  /|   |  \|  |  //        \
+    \___  /   (____  /|____/ |___|  /|____//_______  /
+        \/         \/             \/               \/
+
+  Developed by:
+    Mikael Lund, Björn Persson, Martin Trulsson,
+    Ondřej Maršálek, Christophe Labbez, Andre Teixeira,
+    Anıl Kurut, Chris Evers, Robert Vácha, Axel Thuresson,
+    Björn Stenqvist, João Henriques, Alexei Abrikossov,
+    Giulio Tesei, Lukáš Sukeník, Niels Kouwenhoven
+
+  References:
+    http://doi.org/nvn
+    http://doi.org/dfqgch
+
+  Library build details:
+    Compiled on Nov 27 2017 12:30:42
+    Git commit f5e8ecc (2017-11-26 15:01:11 +0100)
+***********************************************************************
+Ionic s = 0.05
+Ionic s = 0.05
+Reading space state file 'state'. OK!
+  Read 300 particle(s).
+  Read 100 group(s).
+  Restoring random number generator state.
+
+ .................
+  Atom Properties  
+ *****************
+  Number of entries:       3
+  Element info:
+    unk   HD    TL    
+
+ ...............................
+  Simulation Space and Geometry  
+ *******************************
+  Boundary                 Cuboid
+  Volume                   916901 Å³ = 916.901 nm³ = 9.16901e-22 liters
+  Sidelengths              76.1511 76.1511 158.114 (Å)
+  Scale directions         xy
+  Number of particles      300
+  Electroneutrality        Yes 0
+  System sanity check      Passed
+  Number of molecule types 1
+  Groups:
+    1     [0-2]            lipid       
+    2     [3-5]            lipid       
+    3     [6-8]            lipid       
+    4     [9-11]           lipid       
+    5     [12-14]          lipid       
+    6     [15-17]          lipid       
+    7     [18-20]          lipid       
+    8     [21-23]          lipid       
+    9     [24-26]          lipid       
+    10    [27-29]          lipid       
+    11    [30-32]          lipid       
+    12    [33-35]          lipid       
+    13    [36-38]          lipid       
+    14    [39-41]          lipid       
+    15    [42-44]          lipid       
+    16    [45-47]          lipid       
+    17    [48-50]          lipid       
+    18    [51-53]          lipid       
+    19    [54-56]          lipid       
+    20    [57-59]          lipid       
+    21    [60-62]          lipid       
+    22    [63-65]          lipid       
+    23    [66-68]          lipid       
+    24    [69-71]          lipid       
+    25    [72-74]          lipid       
+    26    [75-77]          lipid       
+    27    [78-80]          lipid       
+    28    [81-83]          lipid       
+    29    [84-86]          lipid       
+    30    [87-89]          lipid       
+    31    [90-92]          lipid       
+    32    [93-95]          lipid       
+    33    [96-98]          lipid       
+    34    [99-101]         lipid       
+    35    [102-104]        lipid       
+    36    [105-107]        lipid       
+    37    [108-110]        lipid       
+    38    [111-113]        lipid       
+    39    [114-116]        lipid       
+    40    [117-119]        lipid       
+    41    [120-122]        lipid       
+    42    [123-125]        lipid       
+    43    [126-128]        lipid       
+    44    [129-131]        lipid       
+    45    [132-134]        lipid       
+    46    [135-137]        lipid       
+    47    [138-140]        lipid       
+    48    [141-143]        lipid       
+    49    [144-146]        lipid       
+    50    [147-149]        lipid       
+    51    [150-152]        lipid       
+    52    [153-155]        lipid       
+    53    [156-158]        lipid       
+    54    [159-161]        lipid       
+    55    [162-164]        lipid       
+    56    [165-167]        lipid       
+    57    [168-170]        lipid       
+    58    [171-173]        lipid       
+    59    [174-176]        lipid       
+    60    [177-179]        lipid       
+    61    [180-182]        lipid       
+    62    [183-185]        lipid       
+    63    [186-188]        lipid       
+    64    [189-191]        lipid       
+    65    [192-194]        lipid       
+    66    [195-197]        lipid       
+    67    [198-200]        lipid       
+    68    [201-203]        lipid       
+    69    [204-206]        lipid       
+    70    [207-209]        lipid       
+    71    [210-212]        lipid       
+    72    [213-215]        lipid       
+    73    [216-218]        lipid       
+    74    [219-221]        lipid       
+    75    [222-224]        lipid       
+    76    [225-227]        lipid       
+    77    [228-230]        lipid       
+    78    [231-233]        lipid       
+    79    [234-236]        lipid       
+    80    [237-239]        lipid       
+    81    [240-242]        lipid       
+    82    [243-245]        lipid       
+    83    [246-248]        lipid       
+    84    [249-251]        lipid       
+    85    [252-254]        lipid       
+    86    [255-257]        lipid       
+    87    [258-260]        lipid       
+    88    [261-263]        lipid       
+    89    [264-266]        lipid       
+    90    [267-269]        lipid       
+    91    [270-272]        lipid       
+    92    [273-275]        lipid       
+    93    [276-278]        lipid       
+    94    [279-281]        lipid       
+    95    [282-284]        lipid       
+    96    [285-287]        lipid       
+    97    [288-290]        lipid       
+    98    [291-293]        lipid       
+    99    [294-296]        lipid       
+    100   [297-299]        lipid       
+
+ .......................................................................
+  Energy: Nonbonded N² - Debye-Huckel (default) (g2g cut=40.000000 Å)  
+ ***********************************************************************
+  Temperature              298 K
+  Dielectric constant      80
+  T∂ϵ/ϵ∂T                  -1.37149
+  Bjerrum length           7.0057 Å
+  Ionic strength           0.05 mol/l
+  Debye length, 1/κ        13.7339 13.7339 Å
+
+  HD<->HD: WeeksChandlerAnderson+Debye-Huckel:
+  WeeksChandlerAnderson pair parameters:
+
+         HD<->HD  σ =     9.5 Å  ϵ =       1 kT = 2.478 kJ/mol
+         TL<->HD  σ =     9.5 Å  ϵ =       1 kT = 2.478 kJ/mol
+         TL<->TL  σ =      10 Å  ϵ =       1 kT = 2.478 kJ/mol
+  Temperature         298 K
+  Dielectric constant 80
+  T∂ϵ/ϵ∂T             -1.3708
+  Bjerrum length      7.00922 Å
+  Ionic strength      0.05 mol/l
+  Debye length, 1/κ   13.7305 13.7305 Å
+
+  TL<->TL: WeeksChandlerAnderson+CosAttract:
+  WeeksChandlerAnderson pair parameters:
+
+         HD<->HD  σ =     9.5 Å  ϵ =       1 kT = 2.478 kJ/mol
+         TL<->HD  σ =     9.5 Å  ϵ =       1 kT = 2.478 kJ/mol
+         TL<->TL  σ =      10 Å  ϵ =       1 kT = 2.478 kJ/mol
+  Depth               1 kT
+  Decay length        16 Å
+  Width               11.2246 Å
+  More info           doi:10/chqzjk
+
+  HD<->TL: WeeksChandlerAnderson+Charge-Nonpolar:
+  WeeksChandlerAnderson pair parameters:
+
+         HD<->HD  σ =     9.5 Å  ϵ =       1 kT = 2.478 kJ/mol
+         TL<->HD  σ =     9.5 Å  ϵ =       1 kT = 2.478 kJ/mol
+         TL<->TL  σ =      10 Å  ϵ =       1 kT = 2.478 kJ/mol
+  Temperature         298 K
+  Dielectric constant 80
+  T∂ϵ/ϵ∂T             -1.3708
+  Bjerrum length      7.00922 Å
+  Excess polarization 49.1292
+
+ ..........................
+  Energy: Bonded particles  
+ **************************
+  Look for group-group bonds:   false
+    i      j      
+    0      1      FENE: k=0.3 kT/Å² r0=15 Å
+    1      2      FENE: k=0.3 kT/Å² r0=15 Å
+    0      2      Harmonic: k=0.05 kT/Å² req=40 Å
+    3      4      FENE: k=0.3 kT/Å² r0=15 Å
+    4      5      FENE: k=0.3 kT/Å² r0=15 Å
+    3      5      Harmonic: k=0.05 kT/Å² req=40 Å
+    6      7      FENE: k=0.3 kT/Å² r0=15 Å
+    7      8      FENE: k=0.3 kT/Å² r0=15 Å
+    6      8      Harmonic: k=0.05 kT/Å² req=40 Å
+    9      10     FENE: k=0.3 kT/Å² r0=15 Å
+    10     11     FENE: k=0.3 kT/Å² r0=15 Å
+    9      11     Harmonic: k=0.05 kT/Å² req=40 Å
+    12     13     FENE: k=0.3 kT/Å² r0=15 Å
+    13     14     FENE: k=0.3 kT/Å² r0=15 Å
+    12     14     Harmonic: k=0.05 kT/Å² req=40 Å
+    15     16     FENE: k=0.3 kT/Å² r0=15 Å
+    16     17     FENE: k=0.3 kT/Å² r0=15 Å
+    15     17     Harmonic: k=0.05 kT/Å² req=40 Å
+    18     19     FENE: k=0.3 kT/Å² r0=15 Å
+    19     20     FENE: k=0.3 kT/Å² r0=15 Å
+    18     20     Harmonic: k=0.05 kT/Å² req=40 Å
+    21     22     FENE: k=0.3 kT/Å² r0=15 Å
+    22     23     FENE: k=0.3 kT/Å² r0=15 Å
+    21     23     Harmonic: k=0.05 kT/Å² req=40 Å
+    24     25     FENE: k=0.3 kT/Å² r0=15 Å
+    25     26     FENE: k=0.3 kT/Å² r0=15 Å
+    24     26     Harmonic: k=0.05 kT/Å² req=40 Å
+    27     28     FENE: k=0.3 kT/Å² r0=15 Å
+    28     29     FENE: k=0.3 kT/Å² r0=15 Å
+    27     29     Harmonic: k=0.05 kT/Å² req=40 Å
+    30     31     FENE: k=0.3 kT/Å² r0=15 Å
+    31     32     FENE: k=0.3 kT/Å² r0=15 Å
+    30     32     Harmonic: k=0.05 kT/Å² req=40 Å
+    33     34     FENE: k=0.3 kT/Å² r0=15 Å
+    34     35     FENE: k=0.3 kT/Å² r0=15 Å
+    33     35     Harmonic: k=0.05 kT/Å² req=40 Å
+    36     37     FENE: k=0.3 kT/Å² r0=15 Å
+    37     38     FENE: k=0.3 kT/Å² r0=15 Å
+    36     38     Harmonic: k=0.05 kT/Å² req=40 Å
+    39     40     FENE: k=0.3 kT/Å² r0=15 Å
+    40     41     FENE: k=0.3 kT/Å² r0=15 Å
+    39     41     Harmonic: k=0.05 kT/Å² req=40 Å
+    42     43     FENE: k=0.3 kT/Å² r0=15 Å
+    43     44     FENE: k=0.3 kT/Å² r0=15 Å
+    42     44     Harmonic: k=0.05 kT/Å² req=40 Å
+    45     46     FENE: k=0.3 kT/Å² r0=15 Å
+    46     47     FENE: k=0.3 kT/Å² r0=15 Å
+    45     47     Harmonic: k=0.05 kT/Å² req=40 Å
+    48     49     FENE: k=0.3 kT/Å² r0=15 Å
+    49     50     FENE: k=0.3 kT/Å² r0=15 Å
+    48     50     Harmonic: k=0.05 kT/Å² req=40 Å
+    51     52     FENE: k=0.3 kT/Å² r0=15 Å
+    52     53     FENE: k=0.3 kT/Å² r0=15 Å
+    51     53     Harmonic: k=0.05 kT/Å² req=40 Å
+    54     55     FENE: k=0.3 kT/Å² r0=15 Å
+    55     56     FENE: k=0.3 kT/Å² r0=15 Å
+    54     56     Harmonic: k=0.05 kT/Å² req=40 Å
+    57     58     FENE: k=0.3 kT/Å² r0=15 Å
+    58     59     FENE: k=0.3 kT/Å² r0=15 Å
+    57     59     Harmonic: k=0.05 kT/Å² req=40 Å
+    60     61     FENE: k=0.3 kT/Å² r0=15 Å
+    61     62     FENE: k=0.3 kT/Å² r0=15 Å
+    60     62     Harmonic: k=0.05 kT/Å² req=40 Å
+    63     64     FENE: k=0.3 kT/Å² r0=15 Å
+    64     65     FENE: k=0.3 kT/Å² r0=15 Å
+    63     65     Harmonic: k=0.05 kT/Å² req=40 Å
+    66     67     FENE: k=0.3 kT/Å² r0=15 Å
+    67     68     FENE: k=0.3 kT/Å² r0=15 Å
+    66     68     Harmonic: k=0.05 kT/Å² req=40 Å
+    69     70     FENE: k=0.3 kT/Å² r0=15 Å
+    70     71     FENE: k=0.3 kT/Å² r0=15 Å
+    69     71     Harmonic: k=0.05 kT/Å² req=40 Å
+    72     73     FENE: k=0.3 kT/Å² r0=15 Å
+    73     74     FENE: k=0.3 kT/Å² r0=15 Å
+    72     74     Harmonic: k=0.05 kT/Å² req=40 Å
+    75     76     FENE: k=0.3 kT/Å² r0=15 Å
+    76     77     FENE: k=0.3 kT/Å² r0=15 Å
+    75     77     Harmonic: k=0.05 kT/Å² req=40 Å
+    78     79     FENE: k=0.3 kT/Å² r0=15 Å
+    79     80     FENE: k=0.3 kT/Å² r0=15 Å
+    78     80     Harmonic: k=0.05 kT/Å² req=40 Å
+    81     82     FENE: k=0.3 kT/Å² r0=15 Å
+    82     83     FENE: k=0.3 kT/Å² r0=15 Å
+    81     83     Harmonic: k=0.05 kT/Å² req=40 Å
+    84     85     FENE: k=0.3 kT/Å² r0=15 Å
+    85     86     FENE: k=0.3 kT/Å² r0=15 Å
+    84     86     Harmonic: k=0.05 kT/Å² req=40 Å
+    87     88     FENE: k=0.3 kT/Å² r0=15 Å
+    88     89     FENE: k=0.3 kT/Å² r0=15 Å
+    87     89     Harmonic: k=0.05 kT/Å² req=40 Å
+    90     91     FENE: k=0.3 kT/Å² r0=15 Å
+    91     92     FENE: k=0.3 kT/Å² r0=15 Å
+    90     92     Harmonic: k=0.05 kT/Å² req=40 Å
+    93     94     FENE: k=0.3 kT/Å² r0=15 Å
+    94     95     FENE: k=0.3 kT/Å² r0=15 Å
+    93     95     Harmonic: k=0.05 kT/Å² req=40 Å
+    96     97     FENE: k=0.3 kT/Å² r0=15 Å
+    97     98     FENE: k=0.3 kT/Å² r0=15 Å
+    96     98     Harmonic: k=0.05 kT/Å² req=40 Å
+    99     100    FENE: k=0.3 kT/Å² r0=15 Å
+    100    101    FENE: k=0.3 kT/Å² r0=15 Å
+    99     101    Harmonic: k=0.05 kT/Å² req=40 Å
+    102    103    FENE: k=0.3 kT/Å² r0=15 Å
+    103    104    FENE: k=0.3 kT/Å² r0=15 Å
+    102    104    Harmonic: k=0.05 kT/Å² req=40 Å
+    105    106    FENE: k=0.3 kT/Å² r0=15 Å
+    106    107    FENE: k=0.3 kT/Å² r0=15 Å
+    105    107    Harmonic: k=0.05 kT/Å² req=40 Å
+    108    109    FENE: k=0.3 kT/Å² r0=15 Å
+    109    110    FENE: k=0.3 kT/Å² r0=15 Å
+    108    110    Harmonic: k=0.05 kT/Å² req=40 Å
+    111    112    FENE: k=0.3 kT/Å² r0=15 Å
+    112    113    FENE: k=0.3 kT/Å² r0=15 Å
+    111    113    Harmonic: k=0.05 kT/Å² req=40 Å
+    114    115    FENE: k=0.3 kT/Å² r0=15 Å
+    115    116    FENE: k=0.3 kT/Å² r0=15 Å
+    114    116    Harmonic: k=0.05 kT/Å² req=40 Å
+    117    118    FENE: k=0.3 kT/Å² r0=15 Å
+    118    119    FENE: k=0.3 kT/Å² r0=15 Å
+    117    119    Harmonic: k=0.05 kT/Å² req=40 Å
+    120    121    FENE: k=0.3 kT/Å² r0=15 Å
+    121    122    FENE: k=0.3 kT/Å² r0=15 Å
+    120    122    Harmonic: k=0.05 kT/Å² req=40 Å
+    123    124    FENE: k=0.3 kT/Å² r0=15 Å
+    124    125    FENE: k=0.3 kT/Å² r0=15 Å
+    123    125    Harmonic: k=0.05 kT/Å² req=40 Å
+    126    127    FENE: k=0.3 kT/Å² r0=15 Å
+    127    128    FENE: k=0.3 kT/Å² r0=15 Å
+    126    128    Harmonic: k=0.05 kT/Å² req=40 Å
+    129    130    FENE: k=0.3 kT/Å² r0=15 Å
+    130    131    FENE: k=0.3 kT/Å² r0=15 Å
+    129    131    Harmonic: k=0.05 kT/Å² req=40 Å
+    132    133    FENE: k=0.3 kT/Å² r0=15 Å
+    133    134    FENE: k=0.3 kT/Å² r0=15 Å
+    132    134    Harmonic: k=0.05 kT/Å² req=40 Å
+    135    136    FENE: k=0.3 kT/Å² r0=15 Å
+    136    137    FENE: k=0.3 kT/Å² r0=15 Å
+    135    137    Harmonic: k=0.05 kT/Å² req=40 Å
+    138    139    FENE: k=0.3 kT/Å² r0=15 Å
+    139    140    FENE: k=0.3 kT/Å² r0=15 Å
+    138    140    Harmonic: k=0.05 kT/Å² req=40 Å
+    141    142    FENE: k=0.3 kT/Å² r0=15 Å
+    142    143    FENE: k=0.3 kT/Å² r0=15 Å
+    141    143    Harmonic: k=0.05 kT/Å² req=40 Å
+    144    145    FENE: k=0.3 kT/Å² r0=15 Å
+    145    146    FENE: k=0.3 kT/Å² r0=15 Å
+    144    146    Harmonic: k=0.05 kT/Å² req=40 Å
+    147    148    FENE: k=0.3 kT/Å² r0=15 Å
+    148    149    FENE: k=0.3 kT/Å² r0=15 Å
+    147    149    Harmonic: k=0.05 kT/Å² req=40 Å
+    150    151    FENE: k=0.3 kT/Å² r0=15 Å
+    151    152    FENE: k=0.3 kT/Å² r0=15 Å
+    150    152    Harmonic: k=0.05 kT/Å² req=40 Å
+    153    154    FENE: k=0.3 kT/Å² r0=15 Å
+    154    155    FENE: k=0.3 kT/Å² r0=15 Å
+    153    155    Harmonic: k=0.05 kT/Å² req=40 Å
+    156    157    FENE: k=0.3 kT/Å² r0=15 Å
+    157    158    FENE: k=0.3 kT/Å² r0=15 Å
+    156    158    Harmonic: k=0.05 kT/Å² req=40 Å
+    159    160    FENE: k=0.3 kT/Å² r0=15 Å
+    160    161    FENE: k=0.3 kT/Å² r0=15 Å
+    159    161    Harmonic: k=0.05 kT/Å² req=40 Å
+    162    163    FENE: k=0.3 kT/Å² r0=15 Å
+    163    164    FENE: k=0.3 kT/Å² r0=15 Å
+    162    164    Harmonic: k=0.05 kT/Å² req=40 Å
+    165    166    FENE: k=0.3 kT/Å² r0=15 Å
+    166    167    FENE: k=0.3 kT/Å² r0=15 Å
+    165    167    Harmonic: k=0.05 kT/Å² req=40 Å
+    168    169    FENE: k=0.3 kT/Å² r0=15 Å
+    169    170    FENE: k=0.3 kT/Å² r0=15 Å
+    168    170    Harmonic: k=0.05 kT/Å² req=40 Å
+    171    172    FENE: k=0.3 kT/Å² r0=15 Å
+    172    173    FENE: k=0.3 kT/Å² r0=15 Å
+    171    173    Harmonic: k=0.05 kT/Å² req=40 Å
+    174    175    FENE: k=0.3 kT/Å² r0=15 Å
+    175    176    FENE: k=0.3 kT/Å² r0=15 Å
+    174    176    Harmonic: k=0.05 kT/Å² req=40 Å
+    177    178    FENE: k=0.3 kT/Å² r0=15 Å
+    178    179    FENE: k=0.3 kT/Å² r0=15 Å
+    177    179    Harmonic: k=0.05 kT/Å² req=40 Å
+    180    181    FENE: k=0.3 kT/Å² r0=15 Å
+    181    182    FENE: k=0.3 kT/Å² r0=15 Å
+    180    182    Harmonic: k=0.05 kT/Å² req=40 Å
+    183    184    FENE: k=0.3 kT/Å² r0=15 Å
+    184    185    FENE: k=0.3 kT/Å² r0=15 Å
+    183    185    Harmonic: k=0.05 kT/Å² req=40 Å
+    186    187    FENE: k=0.3 kT/Å² r0=15 Å
+    187    188    FENE: k=0.3 kT/Å² r0=15 Å
+    186    188    Harmonic: k=0.05 kT/Å² req=40 Å
+    189    190    FENE: k=0.3 kT/Å² r0=15 Å
+    190    191    FENE: k=0.3 kT/Å² r0=15 Å
+    189    191    Harmonic: k=0.05 kT/Å² req=40 Å
+    192    193    FENE: k=0.3 kT/Å² r0=15 Å
+    193    194    FENE: k=0.3 kT/Å² r0=15 Å
+    192    194    Harmonic: k=0.05 kT/Å² req=40 Å
+    195    196    FENE: k=0.3 kT/Å² r0=15 Å
+    196    197    FENE: k=0.3 kT/Å² r0=15 Å
+    195    197    Harmonic: k=0.05 kT/Å² req=40 Å
+    198    199    FENE: k=0.3 kT/Å² r0=15 Å
+    199    200    FENE: k=0.3 kT/Å² r0=15 Å
+    198    200    Harmonic: k=0.05 kT/Å² req=40 Å
+    201    202    FENE: k=0.3 kT/Å² r0=15 Å
+    202    203    FENE: k=0.3 kT/Å² r0=15 Å
+    201    203    Harmonic: k=0.05 kT/Å² req=40 Å
+    204    205    FENE: k=0.3 kT/Å² r0=15 Å
+    205    206    FENE: k=0.3 kT/Å² r0=15 Å
+    204    206    Harmonic: k=0.05 kT/Å² req=40 Å
+    207    208    FENE: k=0.3 kT/Å² r0=15 Å
+    208    209    FENE: k=0.3 kT/Å² r0=15 Å
+    207    209    Harmonic: k=0.05 kT/Å² req=40 Å
+    210    211    FENE: k=0.3 kT/Å² r0=15 Å
+    211    212    FENE: k=0.3 kT/Å² r0=15 Å
+    210    212    Harmonic: k=0.05 kT/Å² req=40 Å
+    213    214    FENE: k=0.3 kT/Å² r0=15 Å
+    214    215    FENE: k=0.3 kT/Å² r0=15 Å
+    213    215    Harmonic: k=0.05 kT/Å² req=40 Å
+    216    217    FENE: k=0.3 kT/Å² r0=15 Å
+    217    218    FENE: k=0.3 kT/Å² r0=15 Å
+    216    218    Harmonic: k=0.05 kT/Å² req=40 Å
+    219    220    FENE: k=0.3 kT/Å² r0=15 Å
+    220    221    FENE: k=0.3 kT/Å² r0=15 Å
+    219    221    Harmonic: k=0.05 kT/Å² req=40 Å
+    222    223    FENE: k=0.3 kT/Å² r0=15 Å
+    223    224    FENE: k=0.3 kT/Å² r0=15 Å
+    222    224    Harmonic: k=0.05 kT/Å² req=40 Å
+    225    226    FENE: k=0.3 kT/Å² r0=15 Å
+    226    227    FENE: k=0.3 kT/Å² r0=15 Å
+    225    227    Harmonic: k=0.05 kT/Å² req=40 Å
+    228    229    FENE: k=0.3 kT/Å² r0=15 Å
+    229    230    FENE: k=0.3 kT/Å² r0=15 Å
+    228    230    Harmonic: k=0.05 kT/Å² req=40 Å
+    231    232    FENE: k=0.3 kT/Å² r0=15 Å
+    232    233    FENE: k=0.3 kT/Å² r0=15 Å
+    231    233    Harmonic: k=0.05 kT/Å² req=40 Å
+    234    235    FENE: k=0.3 kT/Å² r0=15 Å
+    235    236    FENE: k=0.3 kT/Å² r0=15 Å
+    234    236    Harmonic: k=0.05 kT/Å² req=40 Å
+    237    238    FENE: k=0.3 kT/Å² r0=15 Å
+    238    239    FENE: k=0.3 kT/Å² r0=15 Å
+    237    239    Harmonic: k=0.05 kT/Å² req=40 Å
+    240    241    FENE: k=0.3 kT/Å² r0=15 Å
+    241    242    FENE: k=0.3 kT/Å² r0=15 Å
+    240    242    Harmonic: k=0.05 kT/Å² req=40 Å
+    243    244    FENE: k=0.3 kT/Å² r0=15 Å
+    244    245    FENE: k=0.3 kT/Å² r0=15 Å
+    243    245    Harmonic: k=0.05 kT/Å² req=40 Å
+    246    247    FENE: k=0.3 kT/Å² r0=15 Å
+    247    248    FENE: k=0.3 kT/Å² r0=15 Å
+    246    248    Harmonic: k=0.05 kT/Å² req=40 Å
+    249    250    FENE: k=0.3 kT/Å² r0=15 Å
+    250    251    FENE: k=0.3 kT/Å² r0=15 Å
+    249    251    Harmonic: k=0.05 kT/Å² req=40 Å
+    252    253    FENE: k=0.3 kT/Å² r0=15 Å
+    253    254    FENE: k=0.3 kT/Å² r0=15 Å
+    252    254    Harmonic: k=0.05 kT/Å² req=40 Å
+    255    256    FENE: k=0.3 kT/Å² r0=15 Å
+    256    257    FENE: k=0.3 kT/Å² r0=15 Å
+    255    257    Harmonic: k=0.05 kT/Å² req=40 Å
+    258    259    FENE: k=0.3 kT/Å² r0=15 Å
+    259    260    FENE: k=0.3 kT/Å² r0=15 Å
+    258    260    Harmonic: k=0.05 kT/Å² req=40 Å
+    261    262    FENE: k=0.3 kT/Å² r0=15 Å
+    262    263    FENE: k=0.3 kT/Å² r0=15 Å
+    261    263    Harmonic: k=0.05 kT/Å² req=40 Å
+    264    265    FENE: k=0.3 kT/Å² r0=15 Å
+    265    266    FENE: k=0.3 kT/Å² r0=15 Å
+    264    266    Harmonic: k=0.05 kT/Å² req=40 Å
+    267    268    FENE: k=0.3 kT/Å² r0=15 Å
+    268    269    FENE: k=0.3 kT/Å² r0=15 Å
+    267    269    Harmonic: k=0.05 kT/Å² req=40 Å
+    270    271    FENE: k=0.3 kT/Å² r0=15 Å
+    271    272    FENE: k=0.3 kT/Å² r0=15 Å
+    270    272    Harmonic: k=0.05 kT/Å² req=40 Å
+    273    274    FENE: k=0.3 kT/Å² r0=15 Å
+    274    275    FENE: k=0.3 kT/Å² r0=15 Å
+    273    275    Harmonic: k=0.05 kT/Å² req=40 Å
+    276    277    FENE: k=0.3 kT/Å² r0=15 Å
+    277    278    FENE: k=0.3 kT/Å² r0=15 Å
+    276    278    Harmonic: k=0.05 kT/Å² req=40 Å
+    279    280    FENE: k=0.3 kT/Å² r0=15 Å
+    280    281    FENE: k=0.3 kT/Å² r0=15 Å
+    279    281    Harmonic: k=0.05 kT/Å² req=40 Å
+    282    283    FENE: k=0.3 kT/Å² r0=15 Å
+    283    284    FENE: k=0.3 kT/Å² r0=15 Å
+    282    284    Harmonic: k=0.05 kT/Å² req=40 Å
+    285    286    FENE: k=0.3 kT/Å² r0=15 Å
+    286    287    FENE: k=0.3 kT/Å² r0=15 Å
+    285    287    Harmonic: k=0.05 kT/Å² req=40 Å
+    288    289    FENE: k=0.3 kT/Å² r0=15 Å
+    289    290    FENE: k=0.3 kT/Å² r0=15 Å
+    288    290    Harmonic: k=0.05 kT/Å² req=40 Å
+    291    292    FENE: k=0.3 kT/Å² r0=15 Å
+    292    293    FENE: k=0.3 kT/Å² r0=15 Å
+    291    293    Harmonic: k=0.05 kT/Å² req=40 Å
+    294    295    FENE: k=0.3 kT/Å² r0=15 Å
+    295    296    FENE: k=0.3 kT/Å² r0=15 Å
+    294    296    Harmonic: k=0.05 kT/Å² req=40 Å
+    297    298    FENE: k=0.3 kT/Å² r0=15 Å
+    298    299    FENE: k=0.3 kT/Å² r0=15 Å
+    297    299    Harmonic: k=0.05 kT/Å² req=40 Å
+
+ ...........................
+  Energy: External Pressure  
+ ***************************
+  Pressure       0 mM = 0 Pa = 0 atm
+  Number of molecules      100 (100 molecular + 0 atomic)
+
+ ..................................
+  Energy: Equilibrium State Energy  
+ **********************************
+  Number of sites          0
+  Processes:
+
+  Steps:    1 / 2000        Macrosteps/min: 15      ETA: Mon Nov 27 12:35:30 2017
+  Steps:    2 / 4000        Macrosteps/min: 15      ETA: Mon Nov 27 12:35:30 2017
+  Steps:    3 / 6000        Macrosteps/min: 15      ETA: Mon Nov 27 12:35:29 2017
+  Steps:    4 / 8000        Macrosteps/min: 15      ETA: Mon Nov 27 12:35:29 2017
+  Steps:    5 / 10000       Macrosteps/min: 15      ETA: Mon Nov 27 12:35:30 2017
+  Steps:    6 / 12000       Macrosteps/min: 15      ETA: Mon Nov 27 12:35:30 2017
+  Steps:    7 / 14000       Macrosteps/min: 15      ETA: Mon Nov 27 12:35:30 2017
+  Steps:    8 / 16000       Macrosteps/min: 15      ETA: Mon Nov 27 12:35:30 2017
+  Steps:    9 / 18000       Macrosteps/min: 15      ETA: Mon Nov 27 12:35:30 2017
+  Steps:   10 / 20000       Macrosteps/min: 15      ETA: Mon Nov 27 12:35:31 2017
+
+ ...................
+  MC Steps and Time  
+ *******************
+  Steps (macro micro tot)  10∙2000 = 20000
+  Time elapsed             0.633333 min = 0.0105556 h
+
+ ....................................
+  Markov Move: P R O P A G A T O R S  
+ ************************************
+  Number of trials              20000
+  Relative time consumption     0
+  Acceptance                    0﹪
+  Runfraction                   100﹪
+  Total energy change           0 kT
+  Average energy                2637.23
+  Initial energy                2651.85 kT
+  Current energy                2617.35 kT
+  Changed                       -34.5046 kT
+  Absolute drift                1.04592e-11 kT
+  Relative drift                3.94411e-13﹪
+
+ ..........................................
+  Markov Move: Single Particle Translation  
+ ******************************************
+  Number of trials              2551
+  Relative time consumption     0.00468399
+  Acceptance                    23.6378﹪
+  Runfraction                   50﹪
+  Total energy change           7.87313 kT
+  Average moves/particle        850
+  Displacement vector           1 1 1
+
+  Individual particle movement:
+
+           dp    Acc. ﹪     Nmoves      ⟨r²⟩/Å²     √⟨r²⟩/Å
+    HD     4     16.9        881         0.494       0.703       
+    TL     2     27.2        1670        0.206       0.454       
+
+ ...........................................
+  Markov Move: Isobaric Volume Fluctuations  
+ *******************************************
+  Number of trials              5006
+  Relative time consumption     0.459241
+  Acceptance                    4.3348﹪
+  Runfraction                   100﹪
+  Total energy change           -7.48636 kT
+  Displacement parameter        0.5
+  Number of molecules           100 (100 molecular + 0 atomic)
+  Pressure                      0 mM = 0 Pa = 0 atm
+  Temperature                   298 K
+  Mean displacement             ∛√⟨dp²⟩ = 12.8718 Å
+  Osmotic coefficient           0
+
+                          ⟨V⟩            ∛⟨V⟩             ⟨1/V⟩             ⟨N/V⟩
+    Averages        905930 Å³       96.7605 Å   1.10401e-06 1/ Å³       183.326 mM
+
+ .........................................
+  Markov Move: Group Rotation/Translation  
+ *****************************************
+  Number of trials              47400
+  Relative time consumption     0.0812981
+  Acceptance                    14.9937﹪
+  Runfraction                   10﹪
+  Total energy change           24.7417 kT
+  Max. translation              ±1 Å
+  Max. rotation                 ±14.3239°
+  Move Statistics:
+    Group name          Acc. ﹪     √⟨dR²⟩/Å     √⟨dθ²⟩/°
+    lipid               15          0.344       2.5         
+
+ .................................
+  Markov Move: Polymer Pivot Move  
+ *********************************
+  Number of trials              53000
+  Relative time consumption     0.0928585
+  Acceptance                    45.0358﹪
+  Runfraction                   10﹪
+  Total energy change           -59.6331 kT
+  Displacement parameter        6
+  Min/max length to move        1 2
+  Move Statistics:
+    Id                  Acc. ﹪   Nmoves    √⟨msq²⟩/Å  
+    lipid               45        53000     1.36      
+
+ .............................
+  Analysis: Bilayer structure  
+ *****************************
+  Reference:                    doi:10/chqzjk
+  Sample interval               0
+  Number of sample events       2001
+  Lipid order parameter         0.804155
+  Area per lipid                1.15074 σ²
+
+ ...........................
+  Analysis: Virial Pressure  
+ ***************************
+  Sample interval               5
+  Number of sample events       4000
+  Relative time                 0.360351
+
+                         kT/Å³             mM             Pa            atm
+  Ideal            0.000331226        550.014    1.36278e+06        13.4496
+  Excess          -0.000381557       -633.591   -1.56986e+06       -15.4934
+  Total           -5.03312e-05       -83.5769        -207081       -2.04373
+
+  Osmotic coefficient = -0.151954
+  Excess pressure tensor (mM):
+
+-227.188 -21.1941 -32.7542
+-21.1941 -200.228  33.2793
+-32.7542  33.2793 -206.176
+
+ ...................................
+  Analysis: XTC trajectory reporter  
+ ***********************************
+  Reference:                    http://manual.gromacs.org/online/xtc.html
+  Sample interval               20
+  Number of sample events       1000
+  Filename                      membrane.xtc
+
+ ...........
+  Unittests  
+ ***********
+  Unittest state                       unstable
+  Test file                            membrane.test (read)
+  Number of tests                      14
+  Number of failed tests               0
+Writing to file 'membrane.pqr'. OK!
+Writing space state file 'state'. OK!
+Writing to file 'bondlist.tcl'. OK!
+<end of output>
+Test time =  38.80 sec
+----------------------------------------------------------
+Test Passed.
+"example_membrane" end time: Nov 27 12:35 CET
+"example_membrane" time elapsed: 00:00:38
+----------------------------------------------------------
+
+9/13 Testing: example_bulk
+9/13 Test: example_bulk
+Command: "/home/bjorn/miniconda3/bin/python" "/home/bjorn/github/NewAllGo/src/examples/bulk.py"
+Directory: /home/bjorn/github/NewAllGo/src/examples
+"example_bulk" start time: Nov 27 12:35 CET
+Output:
+----------------------------------------------------------
+.......................................................................
+  Welcome to FAUNUS - A Framework for Molecule Simulation.
+  Copyright (C) 2002-2017 Mikael Lund
+
+  This program is free software; you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation; either version 2 of the License, or
+  (at your option) any later version.
+
+   ___________                               _________
+   \_   _____/_____    __ __   ____   __ __ /   _____/
+    |    __)  \__  \  |  |  \ /    \ |  |  \\_____  \
+    |     \    / __ \_|  |  /|   |  \|  |  //        \
+    \___  /   (____  /|____/ |___|  /|____//_______  /
+        \/         \/             \/               \/
+
+  Developed by:
+    Mikael Lund, Björn Persson, Martin Trulsson,
+    Ondřej Maršálek, Christophe Labbez, Andre Teixeira,
+    Anıl Kurut, Chris Evers, Robert Vácha, Axel Thuresson,
+    Björn Stenqvist, João Henriques, Alexei Abrikossov,
+    Giulio Tesei, Lukáš Sukeník, Niels Kouwenhoven
+
+  References:
+    http://doi.org/nvn
+    http://doi.org/dfqgch
+
+  Library build details:
+    Compiled on Nov 27 2017 12:31:01
+    Git commit f5e8ecc (2017-11-26 15:01:11 +0100)
+***********************************************************************
+Reading space state file 'state'. OK!
+  Read 2304 particle(s).
+  Read 1 group(s).
+  Restoring random number generator state.
+
+ .................
+  Atom Properties  
+ *****************
+  Number of entries:       3
+  Element info:
+    unk   Cl    Na    
+
+ ...............................
+  Simulation Space and Geometry  
+ *******************************
+  Boundary                 Cuboid
+  Volume                   76765.6 Å³ = 76.7656 nm³ = 7.67656e-23 liters
+  Sidelengths              42.5 42.5 42.5 (Å)
+  Scale directions         XYZ
+  Number of particles      2304
+  Electroneutrality        Yes 0
+  System sanity check      Passed
+  Number of molecule types 1
+  Groups:
+    1     [0-2303]         NaCl        N/V = 0.0300134 Å⁻³ = 49838.5 mM  
+
+ .................................................................................................
+  Energy: Nonbonded N² - CoulombWolf/Yonezawa+Lennard-Jones (rcut=14.000000 Å) (g2g cut=inf Å)  
+ *************************************************************************************************
+  Temperature              1100 K
+  Dielectric constant      1
+  T∂ϵ/ϵ∂T                  -404.8
+  Bjerrum length           151.909 Å
+  More info                doi:10/j97
+  Cut-off                  14 Å
+  Lennard-Jones pair parameters:
+
+         Cl<->Cl  σ =     4.4 Å  ϵ = 0.04575 kT = 0.4184 kJ/mol
+         Na<->Cl  σ =   3.865 Å  ϵ = 0.007614 kT = 0.06964 kJ/mol
+         Na<->Na  σ =    3.33 Å  ϵ = 0.001267 kT = 0.01159 kJ/mol
+
+ ...........................
+  Energy: External Pressure  
+ ***************************
+  Pressure       11 mM = 100606 Pa = 0.9929 atm
+  Number of molecules      2304 (0 molecular + 2304 atomic)
+
+ .......................
+  MC Simulation Begins!  
+ ***********************
+  Steps:    1 / 50          Macrosteps/min: 7       ETA: Mon Nov 27 12:36:55 2017
+  Steps:    2 / 100         Macrosteps/min: 6       ETA: Mon Nov 27 12:37:00 2017
+  Steps:    3 / 150         Macrosteps/min: 6       ETA: Mon Nov 27 12:37:07 2017
+  Steps:    4 / 200         Macrosteps/min: 6       ETA: Mon Nov 27 12:37:10 2017
+  Steps:    5 / 250         Macrosteps/min: 5       ETA: Mon Nov 27 12:37:11 2017
+  Steps:    6 / 300         Macrosteps/min: 5       ETA: Mon Nov 27 12:37:12 2017
+  Steps:    7 / 350         Macrosteps/min: 5       ETA: Mon Nov 27 12:37:12 2017
+  Steps:    8 / 400         Macrosteps/min: 6       ETA: Mon Nov 27 12:37:09 2017
+  Steps:    9 / 450         Macrosteps/min: 6       ETA: Mon Nov 27 12:37:09 2017
+  Steps:   10 / 500         Macrosteps/min: 5       ETA: Mon Nov 27 12:37:11 2017
+
+ ...................
+  MC Steps and Time  
+ *******************
+  Steps (macro micro tot)  10∙50 = 500
+  Time elapsed             1.66667 min = 0.0277778 h
+
+ ....................................
+  Markov Move: P R O P A G A T O R S  
+ ************************************
+  Number of trials              500
+  Relative time consumption     0
+  Acceptance                    0﹪
+  Runfraction                   100﹪
+  Total energy change           0 kT
+  Average energy                -93332.3
+  Initial energy                -93329.5 kT
+  Current energy                -93467.5 kT
+  Changed                       -138.014 kT
+  Absolute drift                -9.8953e-10 kT
+  Relative drift                1.06025e-12﹪
+
+ ..........................................
+  Markov Move: Single Particle Translation  
+ ******************************************
+  Number of trials              578304
+  Relative time consumption     0.719787
+  Acceptance                    21.7012﹪
+  Runfraction                   100﹪
+  Total energy change           -138.014 kT
+  Average moves/particle        251
+  Displacement vector           1 1 1
+
+  Individual particle movement:
+
+           dp    Acc. ﹪     Nmoves      ⟨r²⟩/Å²     √⟨r²⟩/Å
+    Cl     1     19.1        288436      0.0329      0.181       
+    Na     1     24.3        289868      0.0449      0.212       
+
+ .............................................
+  Analysis: Atomic Pair Distribution Function  
+ *********************************************
+  Sample interval               10
+  Number of sample events       50
+  Relative time                 0.07825
+
+ .........................
+  Analysis: System energy  
+ *************************
+  Sample interval               20
+  Number of sample events       25
+  Relative time                 0.0100979
+
+ ...........................
+  Analysis: Virial Pressure  
+ ***************************
+  Sample interval               5
+  Number of sample events       100
+  Relative time                 0.109362
+
+                         kT/Å³             mM             Pa            atm
+  Ideal              0.0300134        49838.5    4.55821e+08        4498.61
+  Excess             0.0108586        18031.1    1.64912e+08        1627.55
+  Total               0.040872        67869.6    6.20733e+08        6126.16
+
+  Osmotic coefficient = 1.36179
+  Excess pressure tensor (mM):
+
+ 4738.75  1080.01 -428.506
+ 1080.01  6837.51  844.539
+-428.506  844.539  6454.82
+
+ ...............................
+  Analysis: Virtual Volume Move  
+ *******************************
+  Reference:                    doi:10.1063/1.472721
+  Sample interval               5
+  Number of sample events       100
+  Relative time                 0.0808653
+  Volume perturbation (dV)      0.2 Å³
+  Perturbation directions       1 1 1
+  Full Hamiltonian              false
+  Excess pressure               0.0112928 kT/Å³ = 18752.1 mM = 1.71506e+08 Pa
+
+ ...................................
+  Analysis: XTC trajectory reporter  
+ ***********************************
+  Reference:                    http://manual.gromacs.org/online/xtc.html
+  Sample interval               20
+  Number of sample events       25
+  Filename                      bulk.xtc
+
+ ...........
+  Unittests  
+ ***********
+  Unittest state                       unstable
+  Test file                            bulk.test (read)
+  Number of tests                      5
+  Number of failed tests               0
+Writing to file 'bulk.pqr'. OK!
+Writing space state file 'state'. OK!
+<end of output>
+Test time = 100.88 sec
+----------------------------------------------------------
+Test Passed.
+"example_bulk" end time: Nov 27 12:37 CET
+"example_bulk" time elapsed: 00:01:40
+----------------------------------------------------------
+
+10/13 Testing: example_capparticles
+10/13 Test: example_capparticles
+Command: "/home/bjorn/miniconda3/bin/python" "/home/bjorn/github/NewAllGo/src/examples/capparticles.py"
+Directory: /home/bjorn/github/NewAllGo/src/examples
+"example_capparticles" start time: Nov 27 12:37 CET
+Output:
+----------------------------------------------------------
+.......................................................................
+  Welcome to FAUNUS - A Framework for Molecule Simulation.
+  Copyright (C) 2002-2017 Mikael Lund
+
+  This program is free software; you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation; either version 2 of the License, or
+  (at your option) any later version.
+
+   ___________                               _________
+   \_   _____/_____    __ __   ____   __ __ /   _____/
+    |    __)  \__  \  |  |  \ /    \ |  |  \\_____  \
+    |     \    / __ \_|  |  /|   |  \|  |  //        \
+    \___  /   (____  /|____/ |___|  /|____//_______  /
+        \/         \/             \/               \/
+
+  Developed by:
+    Mikael Lund, Björn Persson, Martin Trulsson,
+    Ondřej Maršálek, Christophe Labbez, Andre Teixeira,
+    Anıl Kurut, Chris Evers, Robert Vácha, Axel Thuresson,
+    Björn Stenqvist, João Henriques, Alexei Abrikossov,
+    Giulio Tesei, Lukáš Sukeník, Niels Kouwenhoven
+
+  References:
+    http://doi.org/nvn
+    http://doi.org/dfqgch
+
+  Library build details:
+    Compiled on Nov 27 2017 12:31:09
+    Git commit f5e8ecc (2017-11-26 15:01:11 +0100)
+***********************************************************************
+Reading space state file 'state'. OK!
+  Read 11 particle(s).
+  Read 2 group(s).
+  Restoring random number generator state.
+
+ .................
+  Atom Properties  
+ *****************
+  Number of entries:       3
+  Element info:
+    unk   Cap   Sph   
+
+ ...............................
+  Simulation Space and Geometry  
+ *******************************
+  Boundary                 Cuboid
+  Volume                   27 Å³ = 0.027 nm³ = 2.7e-26 liters
+  Sidelengths              3 3 3 (Å)
+  Scale directions         XYZ
+  Number of particles      11
+  Electroneutrality        Yes 0
+  System sanity check      Passed
+  Number of molecule types 2
+  Groups:
+    1     [0-0]            Capsphere   N/V = 0.037037 Å⁻³ = 61501.5 mM  
+    2     [1-10]           Sphere      N/V = 0.37037 Å⁻³ = 615015 mM  
+
+ .......................
+  MC Simulation Begins!  
+ ***********************
+  Steps:    1 / 10000       Macrosteps/min: 909     ETA: Mon Nov 27 12:37:12 2017
+  Steps:    2 / 20000       Macrosteps/min: 967     ETA: Mon Nov 27 12:37:12 2017
+  Steps:    3 / 30000       Macrosteps/min: 1016    ETA: Mon Nov 27 12:37:12 2017
+  Steps:    4 / 40000       Macrosteps/min: 1034    ETA: Mon Nov 27 12:37:12 2017
+  Steps:    5 / 50000       Macrosteps/min: 1071    ETA: Mon Nov 27 12:37:12 2017
+  Steps:    6 / 60000       Macrosteps/min: 1071    ETA: Mon Nov 27 12:37:12 2017
+  Steps:    7 / 70000       Macrosteps/min: 1090    ETA: Mon Nov 27 12:37:12 2017
+  Steps:    8 / 80000       Macrosteps/min: 1090    ETA: Mon Nov 27 12:37:12 2017
+  Steps:    9 / 90000       Macrosteps/min: 1090    ETA: Mon Nov 27 12:37:12 2017
+  Steps:   10 / 100000      Macrosteps/min: 1111    ETA: Mon Nov 27 12:37:12 2017
+
+ ...................
+  MC Steps and Time  
+ *******************
+  Steps (macro micro tot)  10∙10000 = 100000
+  Time elapsed             0 min = 0 h
+
+ ....................................
+  Markov Move: P R O P A G A T O R S  
+ ************************************
+  Number of trials              100000
+  Relative time consumption     0
+  Acceptance                    0﹪
+  Runfraction                   100﹪
+  Total energy change           0 kT
+  Average energy                0
+  Initial energy                0 kT
+  Current energy                0 kT
+  Changed                       0 kT
+  Absolute drift                0 kT
+  Relative drift                -nan﹪
+
+ .......................................
+  Markov Move: Single Particle Rotation  
+ ***************************************
+  Number of trials              49880
+  Relative time consumption     0.0967948
+  Acceptance                    87.8889﹪
+  Runfraction                   100﹪
+  Total energy change           0 kT
+  Average moves/particle        49880
+
+  Individual particle rotation:
+
+           dp    Acc. ﹪     ⟨dθ²⟩/°     √⟨dθ²⟩/°
+    Cap    360   87.9        1.14e+05    337         
+
+ ..........................................
+  Markov Move: Single Particle Translation  
+ ******************************************
+  Number of trials              274616
+  Relative time consumption     0.688973
+  Acceptance                    36.0241﹪
+  Runfraction                   100﹪
+  Total energy change           0 kT
+  Average moves/particle        30512
+  Displacement vector           1 1 1
+
+  Individual particle movement:
+
+           dp    Acc. ﹪     Nmoves      ⟨r²⟩/Å²     √⟨r²⟩/Å
+    Cap    1     37.3        25176       0.0787      0.281       
+    Sph    1     35.9        249440      0.0757      0.275       
+
+ .............................................
+  Analysis: Atomic Pair Distribution Function  
+ *********************************************
+  Sample interval               10
+  Number of sample events       10000
+  Relative time                 0.0792768
+
+ .......................
+  Analysis: Capanalysis  
+ ***********************
+  Sample interval               10
+  Number of sample events       10000
+
+ .........................
+  Analysis: System energy  
+ *************************
+  Sample interval               20
+  Number of sample events       5000
+  Relative time                 0.0191243
+
+ ...........
+  Unittests  
+ ***********
+  Unittest state                       unstable
+  Test file                            capparticles.test (read)
+  Number of tests                      4
+  Number of failed tests               0
+Writing to file 'capparticles.pqr'. OK!
+Writing space state file 'state'. OK!
+<end of output>
+Test time =   0.63 sec
+----------------------------------------------------------
+Test Passed.
+"example_capparticles" end time: Nov 27 12:37 CET
+"example_capparticles" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/13 Testing: example_water2
+11/13 Test: example_water2
+Command: "/home/bjorn/miniconda3/bin/python" "/home/bjorn/github/NewAllGo/src/examples/water2.py"
+Directory: /home/bjorn/github/NewAllGo/src/examples
+"example_water2" start time: Nov 27 12:37 CET
+Output:
+----------------------------------------------------------
+.......................................................................
+  Welcome to FAUNUS - A Framework for Molecule Simulation.
+  Copyright (C) 2002-2017 Mikael Lund
+
+  This program is free software; you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation; either version 2 of the License, or
+  (at your option) any later version.
+
+   ___________                               _________
+   \_   _____/_____    __ __   ____   __ __ /   _____/
+    |    __)  \__  \  |  |  \ /    \ |  |  \\_____  \
+    |     \    / __ \_|  |  /|   |  \|  |  //        \
+    \___  /   (____  /|____/ |___|  /|____//_______  /
+        \/         \/             \/               \/
+
+  Developed by:
+    Mikael Lund, Björn Persson, Martin Trulsson,
+    Ondřej Maršálek, Christophe Labbez, Andre Teixeira,
+    Anıl Kurut, Chris Evers, Robert Vácha, Axel Thuresson,
+    Björn Stenqvist, João Henriques, Alexei Abrikossov,
+    Giulio Tesei, Lukáš Sukeník, Niels Kouwenhoven
+
+  References:
+    http://doi.org/nvn
+    http://doi.org/dfqgch
+
+  Library build details:
+    Compiled on Nov 27 2017 12:30:36
+    Git commit f5e8ecc (2017-11-26 15:01:11 +0100)
+***********************************************************************
+Reading space state file 'state'. OK!
+  Read 3000 particle(s).
+  Read 1000 group(s).
+  Restoring random number generator state.
+
+ .................
+  Atom Properties  
+ *****************
+  Number of entries:       3
+  Element info:
+    unk   HW    OW    
+
+ ...............................
+  Simulation Space and Geometry  
+ *******************************
+  Boundary                 Cuboid
+  Volume                   30185.1 Å³ = 30.1851 nm³ = 3.01851e-23 liters
+  Sidelengths              31.1361 31.1361 31.1361 (Å)
+  Scale directions         XYZ
+  Number of particles      3000
+  Electroneutrality        Yes 0
+  System sanity check      Passed
+  Number of molecule types 1
+  Groups:
+    1     [0-2]            water       
+    2     [3-5]            water       
+    3     [6-8]            water       
+    4     [9-11]           water       
+    5     [12-14]          water       
+    6     [15-17]          water       
+    7     [18-20]          water       
+    8     [21-23]          water       
+    9     [24-26]          water       
+    10    [27-29]          water       
+    11    [30-32]          water       
+    12    [33-35]          water       
+    13    [36-38]          water       
+    14    [39-41]          water       
+    15    [42-44]          water       
+    16    [45-47]          water       
+    17    [48-50]          water       
+    18    [51-53]          water       
+    19    [54-56]          water       
+    20    [57-59]          water       
+    21    [60-62]          water       
+    22    [63-65]          water       
+    23    [66-68]          water       
+    24    [69-71]          water       
+    25    [72-74]          water       
+    26    [75-77]          water       
+    27    [78-80]          water       
+    28    [81-83]          water       
+    29    [84-86]          water       
+    30    [87-89]          water       
+    31    [90-92]          water       
+    32    [93-95]          water       
+    33    [96-98]          water       
+    34    [99-101]         water       
+    35    [102-104]        water       
+    36    [105-107]        water       
+    37    [108-110]        water       
+    38    [111-113]        water       
+    39    [114-116]        water       
+    40    [117-119]        water       
+    41    [120-122]        water       
+    42    [123-125]        water       
+    43    [126-128]        water       
+    44    [129-131]        water       
+    45    [132-134]        water       
+    46    [135-137]        water       
+    47    [138-140]        water       
+    48    [141-143]        water       
+    49    [144-146]        water       
+    50    [147-149]        water       
+    51    [150-152]        water       
+    52    [153-155]        water       
+    53    [156-158]        water       
+    54    [159-161]        water       
+    55    [162-164]        water       
+    56    [165-167]        water       
+    57    [168-170]        water       
+    58    [171-173]        water       
+    59    [174-176]        water       
+    60    [177-179]        water       
+    61    [180-182]        water       
+    62    [183-185]        water       
+    63    [186-188]        water       
+    64    [189-191]        water       
+    65    [192-194]        water       
+    66    [195-197]        water       
+    67    [198-200]        water       
+    68    [201-203]        water       
+    69    [204-206]        water       
+    70    [207-209]        water       
+    71    [210-212]        water       
+    72    [213-215]        water       
+    73    [216-218]        water       
+    74    [219-221]        water       
+    75    [222-224]        water       
+    76    [225-227]        water       
+    77    [228-230]        water       
+    78    [231-233]        water       
+    79    [234-236]        water       
+    80    [237-239]        water       
+    81    [240-242]        water       
+    82    [243-245]        water       
+    83    [246-248]        water       
+    84    [249-251]        water       
+    85    [252-254]        water       
+    86    [255-257]        water       
+    87    [258-260]        water       
+    88    [261-263]        water       
+    89    [264-266]        water       
+    90    [267-269]        water       
+    91    [270-272]        water       
+    92    [273-275]        water       
+    93    [276-278]        water       
+    94    [279-281]        water       
+    95    [282-284]        water       
+    96    [285-287]        water       
+    97    [288-290]        water       
+    98    [291-293]        water       
+    99    [294-296]        water       
+    100   [297-299]        water       
+    101   [300-302]        water       
+    102   [303-305]        water       
+    103   [306-308]        water       
+    104   [309-311]        water       
+    105   [312-314]        water       
+    106   [315-317]        water       
+    107   [318-320]        water       
+    108   [321-323]        water       
+    109   [324-326]        water       
+    110   [327-329]        water       
+    111   [330-332]        water       
+    112   [333-335]        water       
+    113   [336-338]        water       
+    114   [339-341]        water       
+    115   [342-344]        water       
+    116   [345-347]        water       
+    117   [348-350]        water       
+    118   [351-353]        water       
+    119   [354-356]        water       
+    120   [357-359]        water       
+    121   [360-362]        water       
+    122   [363-365]        water       
+    123   [366-368]        water       
+    124   [369-371]        water       
+    125   [372-374]        water       
+    126   [375-377]        water       
+    127   [378-380]        water       
+    128   [381-383]        water       
+    129   [384-386]        water       
+    130   [387-389]        water       
+    131   [390-392]        water       
+    132   [393-395]        water       
+    133   [396-398]        water       
+    134   [399-401]        water       
+    135   [402-404]        water       
+    136   [405-407]        water       
+    137   [408-410]        water       
+    138   [411-413]        water       
+    139   [414-416]        water       
+    140   [417-419]        water       
+    141   [420-422]        water       
+    142   [423-425]        water       
+    143   [426-428]        water       
+    144   [429-431]        water       
+    145   [432-434]        water       
+    146   [435-437]        water       
+    147   [438-440]        water       
+    148   [441-443]        water       
+    149   [444-446]        water       
+    150   [447-449]        water       
+    151   [450-452]        water       
+    152   [453-455]        water       
+    153   [456-458]        water       
+    154   [459-461]        water       
+    155   [462-464]        water       
+    156   [465-467]        water       
+    157   [468-470]        water       
+    158   [471-473]        water       
+    159   [474-476]        water       
+    160   [477-479]        water       
+    161   [480-482]        water       
+    162   [483-485]        water       
+    163   [486-488]        water       
+    164   [489-491]        water       
+    165   [492-494]        water       
+    166   [495-497]        water       
+    167   [498-500]        water       
+    168   [501-503]        water       
+    169   [504-506]        water       
+    170   [507-509]        water       
+    171   [510-512]        water       
+    172   [513-515]        water       
+    173   [516-518]        water       
+    174   [519-521]        water       
+    175   [522-524]        water       
+    176   [525-527]        water       
+    177   [528-530]        water       
+    178   [531-533]        water       
+    179   [534-536]        water       
+    180   [537-539]        water       
+    181   [540-542]        water       
+    182   [543-545]        water       
+    183   [546-548]        water       
+    184   [549-551]        water       
+    185   [552-554]        water       
+    186   [555-557]        water       
+    187   [558-560]        water       
+    188   [561-563]        water       
+    189   [564-566]        water       
+    190   [567-569]        water       
+    191   [570-572]        water       
+    192   [573-575]        water       
+    193   [576-578]        water       
+    194   [579-581]        water       
+    195   [582-584]        water       
+    196   [585-587]        water       
+    197   [588-590]        water       
+    198   [591-593]        water       
+    199   [594-596]        water       
+    200   [597-599]        water       
+    201   [600-602]        water       
+    202   [603-605]        water       
+    203   [606-608]        water       
+    204   [609-611]        water       
+    205   [612-614]        water       
+    206   [615-617]        water       
+    207   [618-620]        water       
+    208   [621-623]        water       
+    209   [624-626]        water       
+    210   [627-629]        water       
+    211   [630-632]        water       
+    212   [633-635]        water       
+    213   [636-638]        water       
+    214   [639-641]        water       
+    215   [642-644]        water       
+    216   [645-647]        water       
+    217   [648-650]        water       
+    218   [651-653]        water       
+    219   [654-656]        water       
+    220   [657-659]        water       
+    221   [660-662]        water       
+    222   [663-665]        water       
+    223   [666-668]        water       
+    224   [669-671]        water       
+    225   [672-674]        water       
+    226   [675-677]        water       
+    227   [678-680]        water       
+    228   [681-683]        water       
+    229   [684-686]        water       
+    230   [687-689]        water       
+    231   [690-692]        water       
+    232   [693-695]        water       
+    233   [696-698]        water       
+    234   [699-701]        water       
+    235   [702-704]        water       
+    236   [705-707]        water       
+    237   [708-710]        water       
+    238   [711-713]        water       
+    239   [714-716]        water       
+    240   [717-719]        water       
+    241   [720-722]        water       
+    242   [723-725]        water       
+    243   [726-728]        water       
+    244   [729-731]        water       
+    245   [732-734]        water       
+    246   [735-737]        water       
+    247   [738-740]        water       
+    248   [741-743]        water       
+    249   [744-746]        water       
+    250   [747-749]        water       
+    251   [750-752]        water       
+    252   [753-755]        water       
+    253   [756-758]        water       
+    254   [759-761]        water       
+    255   [762-764]        water       
+    256   [765-767]        water       
+    257   [768-770]        water       
+    258   [771-773]        water       
+    259   [774-776]        water       
+    260   [777-779]        water       
+    261   [780-782]        water       
+    262   [783-785]        water       
+    263   [786-788]        water       
+    264   [789-791]        water       
+    265   [792-794]        water       
+    266   [795-797]        water       
+    267   [798-800]        water       
+    268   [801-803]        water       
+    269   [804-806]        water       
+    270   [807-809]        water       
+    271   [810-812]        water       
+    272   [813-815]        water       
+    273   [816-818]        water       
+    274   [819-821]        water       
+    275   [822-824]        water       
+    276   [825-827]        water       
+    277   [828-830]        water       
+    278   [831-833]        water       
+    279   [834-836]        water       
+    280   [837-839]        water       
+    281   [840-842]        water       
+    282   [843-845]        water       
+    283   [846-848]        water       
+    284   [849-851]        water       
+    285   [852-854]        water       
+    286   [855-857]        water       
+    287   [858-860]        water       
+    288   [861-863]        water       
+    289   [864-866]        water       
+    290   [867-869]        water       
+    291   [870-872]        water       
+    292   [873-875]        water       
+    293   [876-878]        water       
+    294   [879-881]        water       
+    295   [882-884]        water       
+    296   [885-887]        water       
+    297   [888-890]        water       
+    298   [891-893]        water       
+    299   [894-896]        water       
+    300   [897-899]        water       
+    301   [900-902]        water       
+    302   [903-905]        water       
+    303   [906-908]        water       
+    304   [909-911]        water       
+    305   [912-914]        water       
+    306   [915-917]        water       
+    307   [918-920]        water       
+    308   [921-923]        water       
+    309   [924-926]        water       
+    310   [927-929]        water       
+    311   [930-932]        water       
+    312   [933-935]        water       
+    313   [936-938]        water       
+    314   [939-941]        water       
+    315   [942-944]        water       
+    316   [945-947]        water       
+    317   [948-950]        water       
+    318   [951-953]        water       
+    319   [954-956]        water       
+    320   [957-959]        water       
+    321   [960-962]        water       
+    322   [963-965]        water       
+    323   [966-968]        water       
+    324   [969-971]        water       
+    325   [972-974]        water       
+    326   [975-977]        water       
+    327   [978-980]        water       
+    328   [981-983]        water       
+    329   [984-986]        water       
+    330   [987-989]        water       
+    331   [990-992]        water       
+    332   [993-995]        water       
+    333   [996-998]        water       
+    334   [999-1001]       water       
+    335   [1002-1004]      water       
+    336   [1005-1007]      water       
+    337   [1008-1010]      water       
+    338   [1011-1013]      water       
+    339   [1014-1016]      water       
+    340   [1017-1019]      water       
+    341   [1020-1022]      water       
+    342   [1023-1025]      water       
+    343   [1026-1028]      water       
+    344   [1029-1031]      water       
+    345   [1032-1034]      water       
+    346   [1035-1037]      water       
+    347   [1038-1040]      water       
+    348   [1041-1043]      water       
+    349   [1044-1046]      water       
+    350   [1047-1049]      water       
+    351   [1050-1052]      water       
+    352   [1053-1055]      water       
+    353   [1056-1058]      water       
+    354   [1059-1061]      water       
+    355   [1062-1064]      water       
+    356   [1065-1067]      water       
+    357   [1068-1070]      water       
+    358   [1071-1073]      water       
+    359   [1074-1076]      water       
+    360   [1077-1079]      water       
+    361   [1080-1082]      water       
+    362   [1083-1085]      water       
+    363   [1086-1088]      water       
+    364   [1089-1091]      water       
+    365   [1092-1094]      water       
+    366   [1095-1097]      water       
+    367   [1098-1100]      water       
+    368   [1101-1103]      water       
+    369   [1104-1106]      water       
+    370   [1107-1109]      water       
+    371   [1110-1112]      water       
+    372   [1113-1115]      water       
+    373   [1116-1118]      water       
+    374   [1119-1121]      water       
+    375   [1122-1124]      water       
+    376   [1125-1127]      water       
+    377   [1128-1130]      water       
+    378   [1131-1133]      water       
+    379   [1134-1136]      water       
+    380   [1137-1139]      water       
+    381   [1140-1142]      water       
+    382   [1143-1145]      water       
+    383   [1146-1148]      water       
+    384   [1149-1151]      water       
+    385   [1152-1154]      water       
+    386   [1155-1157]      water       
+    387   [1158-1160]      water       
+    388   [1161-1163]      water       
+    389   [1164-1166]      water       
+    390   [1167-1169]      water       
+    391   [1170-1172]      water       
+    392   [1173-1175]      water       
+    393   [1176-1178]      water       
+    394   [1179-1181]      water       
+    395   [1182-1184]      water       
+    396   [1185-1187]      water       
+    397   [1188-1190]      water       
+    398   [1191-1193]      water       
+    399   [1194-1196]      water       
+    400   [1197-1199]      water       
+    401   [1200-1202]      water       
+    402   [1203-1205]      water       
+    403   [1206-1208]      water       
+    404   [1209-1211]      water       
+    405   [1212-1214]      water       
+    406   [1215-1217]      water       
+    407   [1218-1220]      water       
+    408   [1221-1223]      water       
+    409   [1224-1226]      water       
+    410   [1227-1229]      water       
+    411   [1230-1232]      water       
+    412   [1233-1235]      water       
+    413   [1236-1238]      water       
+    414   [1239-1241]      water       
+    415   [1242-1244]      water       
+    416   [1245-1247]      water       
+    417   [1248-1250]      water       
+    418   [1251-1253]      water       
+    419   [1254-1256]      water       
+    420   [1257-1259]      water       
+    421   [1260-1262]      water       
+    422   [1263-1265]      water       
+    423   [1266-1268]      water       
+    424   [1269-1271]      water       
+    425   [1272-1274]      water       
+    426   [1275-1277]      water       
+    427   [1278-1280]      water       
+    428   [1281-1283]      water       
+    429   [1284-1286]      water       
+    430   [1287-1289]      water       
+    431   [1290-1292]      water       
+    432   [1293-1295]      water       
+    433   [1296-1298]      water       
+    434   [1299-1301]      water       
+    435   [1302-1304]      water       
+    436   [1305-1307]      water       
+    437   [1308-1310]      water       
+    438   [1311-1313]      water       
+    439   [1314-1316]      water       
+    440   [1317-1319]      water       
+    441   [1320-1322]      water       
+    442   [1323-1325]      water       
+    443   [1326-1328]      water       
+    444   [1329-1331]      water       
+    445   [1332-1334]      water       
+    446   [1335-1337]      water       
+    447   [1338-1340]      water       
+    448   [1341-1343]      water       
+    449   [1344-1346]      water       
+    450   [1347-1349]      water       
+    451   [1350-1352]      water       
+    452   [1353-1355]      water       
+    453   [1356-1358]      water       
+    454   [1359-1361]      water       
+    455   [1362-1364]      water       
+    456   [1365-1367]      water       
+    457   [1368-1370]      water       
+    458   [1371-1373]      water       
+    459   [1374-1376]      water       
+    460   [1377-1379]      water       
+    461   [1380-1382]      water       
+    462   [1383-1385]      water       
+    463   [1386-1388]      water       
+    464   [1389-1391]      water       
+    465   [1392-1394]      water       
+    466   [1395-1397]      water       
+    467   [1398-1400]      water       
+    468   [1401-1403]      water       
+    469   [1404-1406]      water       
+    470   [1407-1409]      water       
+    471   [1410-1412]      water       
+    472   [1413-1415]      water       
+    473   [1416-1418]      water       
+    474   [1419-1421]      water       
+    475   [1422-1424]      water       
+    476   [1425-1427]      water       
+    477   [1428-1430]      water       
+    478   [1431-1433]      water       
+    479   [1434-1436]      water       
+    480   [1437-1439]      water       
+    481   [1440-1442]      water       
+    482   [1443-1445]      water       
+    483   [1446-1448]      water       
+    484   [1449-1451]      water       
+    485   [1452-1454]      water       
+    486   [1455-1457]      water       
+    487   [1458-1460]      water       
+    488   [1461-1463]      water       
+    489   [1464-1466]      water       
+    490   [1467-1469]      water       
+    491   [1470-1472]      water       
+    492   [1473-1475]      water       
+    493   [1476-1478]      water       
+    494   [1479-1481]      water       
+    495   [1482-1484]      water       
+    496   [1485-1487]      water       
+    497   [1488-1490]      water       
+    498   [1491-1493]      water       
+    499   [1494-1496]      water       
+    500   [1497-1499]      water       
+    501   [1500-1502]      water       
+    502   [1503-1505]      water       
+    503   [1506-1508]      water       
+    504   [1509-1511]      water       
+    505   [1512-1514]      water       
+    506   [1515-1517]      water       
+    507   [1518-1520]      water       
+    508   [1521-1523]      water       
+    509   [1524-1526]      water       
+    510   [1527-1529]      water       
+    511   [1530-1532]      water       
+    512   [1533-1535]      water       
+    513   [1536-1538]      water       
+    514   [1539-1541]      water       
+    515   [1542-1544]      water       
+    516   [1545-1547]      water       
+    517   [1548-1550]      water       
+    518   [1551-1553]      water       
+    519   [1554-1556]      water       
+    520   [1557-1559]      water       
+    521   [1560-1562]      water       
+    522   [1563-1565]      water       
+    523   [1566-1568]      water       
+    524   [1569-1571]      water       
+    525   [1572-1574]      water       
+    526   [1575-1577]      water       
+    527   [1578-1580]      water       
+    528   [1581-1583]      water       
+    529   [1584-1586]      water       
+    530   [1587-1589]      water       
+    531   [1590-1592]      water       
+    532   [1593-1595]      water       
+    533   [1596-1598]      water       
+    534   [1599-1601]      water       
+    535   [1602-1604]      water       
+    536   [1605-1607]      water       
+    537   [1608-1610]      water       
+    538   [1611-1613]      water       
+    539   [1614-1616]      water       
+    540   [1617-1619]      water       
+    541   [1620-1622]      water       
+    542   [1623-1625]      water       
+    543   [1626-1628]      water       
+    544   [1629-1631]      water       
+    545   [1632-1634]      water       
+    546   [1635-1637]      water       
+    547   [1638-1640]      water       
+    548   [1641-1643]      water       
+    549   [1644-1646]      water       
+    550   [1647-1649]      water       
+    551   [1650-1652]      water       
+    552   [1653-1655]      water       
+    553   [1656-1658]      water       
+    554   [1659-1661]      water       
+    555   [1662-1664]      water       
+    556   [1665-1667]      water       
+    557   [1668-1670]      water       
+    558   [1671-1673]      water       
+    559   [1674-1676]      water       
+    560   [1677-1679]      water       
+    561   [1680-1682]      water       
+    562   [1683-1685]      water       
+    563   [1686-1688]      water       
+    564   [1689-1691]      water       
+    565   [1692-1694]      water       
+    566   [1695-1697]      water       
+    567   [1698-1700]      water       
+    568   [1701-1703]      water       
+    569   [1704-1706]      water       
+    570   [1707-1709]      water       
+    571   [1710-1712]      water       
+    572   [1713-1715]      water       
+    573   [1716-1718]      water       
+    574   [1719-1721]      water       
+    575   [1722-1724]      water       
+    576   [1725-1727]      water       
+    577   [1728-1730]      water       
+    578   [1731-1733]      water       
+    579   [1734-1736]      water       
+    580   [1737-1739]      water       
+    581   [1740-1742]      water       
+    582   [1743-1745]      water       
+    583   [1746-1748]      water       
+    584   [1749-1751]      water       
+    585   [1752-1754]      water       
+    586   [1755-1757]      water       
+    587   [1758-1760]      water       
+    588   [1761-1763]      water       
+    589   [1764-1766]      water       
+    590   [1767-1769]      water       
+    591   [1770-1772]      water       
+    592   [1773-1775]      water       
+    593   [1776-1778]      water       
+    594   [1779-1781]      water       
+    595   [1782-1784]      water       
+    596   [1785-1787]      water       
+    597   [1788-1790]      water       
+    598   [1791-1793]      water       
+    599   [1794-1796]      water       
+    600   [1797-1799]      water       
+    601   [1800-1802]      water       
+    602   [1803-1805]      water       
+    603   [1806-1808]      water       
+    604   [1809-1811]      water       
+    605   [1812-1814]      water       
+    606   [1815-1817]      water       
+    607   [1818-1820]      water       
+    608   [1821-1823]      water       
+    609   [1824-1826]      water       
+    610   [1827-1829]      water       
+    611   [1830-1832]      water       
+    612   [1833-1835]      water       
+    613   [1836-1838]      water       
+    614   [1839-1841]      water       
+    615   [1842-1844]      water       
+    616   [1845-1847]      water       
+    617   [1848-1850]      water       
+    618   [1851-1853]      water       
+    619   [1854-1856]      water       
+    620   [1857-1859]      water       
+    621   [1860-1862]      water       
+    622   [1863-1865]      water       
+    623   [1866-1868]      water       
+    624   [1869-1871]      water       
+    625   [1872-1874]      water       
+    626   [1875-1877]      water       
+    627   [1878-1880]      water       
+    628   [1881-1883]      water       
+    629   [1884-1886]      water       
+    630   [1887-1889]      water       
+    631   [1890-1892]      water       
+    632   [1893-1895]      water       
+    633   [1896-1898]      water       
+    634   [1899-1901]      water       
+    635   [1902-1904]      water       
+    636   [1905-1907]      water       
+    637   [1908-1910]      water       
+    638   [1911-1913]      water       
+    639   [1914-1916]      water       
+    640   [1917-1919]      water       
+    641   [1920-1922]      water       
+    642   [1923-1925]      water       
+    643   [1926-1928]      water       
+    644   [1929-1931]      water       
+    645   [1932-1934]      water       
+    646   [1935-1937]      water       
+    647   [1938-1940]      water       
+    648   [1941-1943]      water       
+    649   [1944-1946]      water       
+    650   [1947-1949]      water       
+    651   [1950-1952]      water       
+    652   [1953-1955]      water       
+    653   [1956-1958]      water       
+    654   [1959-1961]      water       
+    655   [1962-1964]      water       
+    656   [1965-1967]      water       
+    657   [1968-1970]      water       
+    658   [1971-1973]      water       
+    659   [1974-1976]      water       
+    660   [1977-1979]      water       
+    661   [1980-1982]      water       
+    662   [1983-1985]      water       
+    663   [1986-1988]      water       
+    664   [1989-1991]      water       
+    665   [1992-1994]      water       
+    666   [1995-1997]      water       
+    667   [1998-2000]      water       
+    668   [2001-2003]      water       
+    669   [2004-2006]      water       
+    670   [2007-2009]      water       
+    671   [2010-2012]      water       
+    672   [2013-2015]      water       
+    673   [2016-2018]      water       
+    674   [2019-2021]      water       
+    675   [2022-2024]      water       
+    676   [2025-2027]      water       
+    677   [2028-2030]      water       
+    678   [2031-2033]      water       
+    679   [2034-2036]      water       
+    680   [2037-2039]      water       
+    681   [2040-2042]      water       
+    682   [2043-2045]      water       
+    683   [2046-2048]      water       
+    684   [2049-2051]      water       
+    685   [2052-2054]      water       
+    686   [2055-2057]      water       
+    687   [2058-2060]      water       
+    688   [2061-2063]      water       
+    689   [2064-2066]      water       
+    690   [2067-2069]      water       
+    691   [2070-2072]      water       
+    692   [2073-2075]      water       
+    693   [2076-2078]      water       
+    694   [2079-2081]      water       
+    695   [2082-2084]      water       
+    696   [2085-2087]      water       
+    697   [2088-2090]      water       
+    698   [2091-2093]      water       
+    699   [2094-2096]      water       
+    700   [2097-2099]      water       
+    701   [2100-2102]      water       
+    702   [2103-2105]      water       
+    703   [2106-2108]      water       
+    704   [2109-2111]      water       
+    705   [2112-2114]      water       
+    706   [2115-2117]      water       
+    707   [2118-2120]      water       
+    708   [2121-2123]      water       
+    709   [2124-2126]      water       
+    710   [2127-2129]      water       
+    711   [2130-2132]      water       
+    712   [2133-2135]      water       
+    713   [2136-2138]      water       
+    714   [2139-2141]      water       
+    715   [2142-2144]      water       
+    716   [2145-2147]      water       
+    717   [2148-2150]      water       
+    718   [2151-2153]      water       
+    719   [2154-2156]      water       
+    720   [2157-2159]      water       
+    721   [2160-2162]      water       
+    722   [2163-2165]      water       
+    723   [2166-2168]      water       
+    724   [2169-2171]      water       
+    725   [2172-2174]      water       
+    726   [2175-2177]      water       
+    727   [2178-2180]      water       
+    728   [2181-2183]      water       
+    729   [2184-2186]      water       
+    730   [2187-2189]      water       
+    731   [2190-2192]      water       
+    732   [2193-2195]      water       
+    733   [2196-2198]      water       
+    734   [2199-2201]      water       
+    735   [2202-2204]      water       
+    736   [2205-2207]      water       
+    737   [2208-2210]      water       
+    738   [2211-2213]      water       
+    739   [2214-2216]      water       
+    740   [2217-2219]      water       
+    741   [2220-2222]      water       
+    742   [2223-2225]      water       
+    743   [2226-2228]      water       
+    744   [2229-2231]      water       
+    745   [2232-2234]      water       
+    746   [2235-2237]      water       
+    747   [2238-2240]      water       
+    748   [2241-2243]      water       
+    749   [2244-2246]      water       
+    750   [2247-2249]      water       
+    751   [2250-2252]      water       
+    752   [2253-2255]      water       
+    753   [2256-2258]      water       
+    754   [2259-2261]      water       
+    755   [2262-2264]      water       
+    756   [2265-2267]      water       
+    757   [2268-2270]      water       
+    758   [2271-2273]      water       
+    759   [2274-2276]      water       
+    760   [2277-2279]      water       
+    761   [2280-2282]      water       
+    762   [2283-2285]      water       
+    763   [2286-2288]      water       
+    764   [2289-2291]      water       
+    765   [2292-2294]      water       
+    766   [2295-2297]      water       
+    767   [2298-2300]      water       
+    768   [2301-2303]      water       
+    769   [2304-2306]      water       
+    770   [2307-2309]      water       
+    771   [2310-2312]      water       
+    772   [2313-2315]      water       
+    773   [2316-2318]      water       
+    774   [2319-2321]      water       
+    775   [2322-2324]      water       
+    776   [2325-2327]      water       
+    777   [2328-2330]      water       
+    778   [2331-2333]      water       
+    779   [2334-2336]      water       
+    780   [2337-2339]      water       
+    781   [2340-2342]      water       
+    782   [2343-2345]      water       
+    783   [2346-2348]      water       
+    784   [2349-2351]      water       
+    785   [2352-2354]      water       
+    786   [2355-2357]      water       
+    787   [2358-2360]      water       
+    788   [2361-2363]      water       
+    789   [2364-2366]      water       
+    790   [2367-2369]      water       
+    791   [2370-2372]      water       
+    792   [2373-2375]      water       
+    793   [2376-2378]      water       
+    794   [2379-2381]      water       
+    795   [2382-2384]      water       
+    796   [2385-2387]      water       
+    797   [2388-2390]      water       
+    798   [2391-2393]      water       
+    799   [2394-2396]      water       
+    800   [2397-2399]      water       
+    801   [2400-2402]      water       
+    802   [2403-2405]      water       
+    803   [2406-2408]      water       
+    804   [2409-2411]      water       
+    805   [2412-2414]      water       
+    806   [2415-2417]      water       
+    807   [2418-2420]      water       
+    808   [2421-2423]      water       
+    809   [2424-2426]      water       
+    810   [2427-2429]      water       
+    811   [2430-2432]      water       
+    812   [2433-2435]      water       
+    813   [2436-2438]      water       
+    814   [2439-2441]      water       
+    815   [2442-2444]      water       
+    816   [2445-2447]      water       
+    817   [2448-2450]      water       
+    818   [2451-2453]      water       
+    819   [2454-2456]      water       
+    820   [2457-2459]      water       
+    821   [2460-2462]      water       
+    822   [2463-2465]      water       
+    823   [2466-2468]      water       
+    824   [2469-2471]      water       
+    825   [2472-2474]      water       
+    826   [2475-2477]      water       
+    827   [2478-2480]      water       
+    828   [2481-2483]      water       
+    829   [2484-2486]      water       
+    830   [2487-2489]      water       
+    831   [2490-2492]      water       
+    832   [2493-2495]      water       
+    833   [2496-2498]      water       
+    834   [2499-2501]      water       
+    835   [2502-2504]      water       
+    836   [2505-2507]      water       
+    837   [2508-2510]      water       
+    838   [2511-2513]      water       
+    839   [2514-2516]      water       
+    840   [2517-2519]      water       
+    841   [2520-2522]      water       
+    842   [2523-2525]      water       
+    843   [2526-2528]      water       
+    844   [2529-2531]      water       
+    845   [2532-2534]      water       
+    846   [2535-2537]      water       
+    847   [2538-2540]      water       
+    848   [2541-2543]      water       
+    849   [2544-2546]      water       
+    850   [2547-2549]      water       
+    851   [2550-2552]      water       
+    852   [2553-2555]      water       
+    853   [2556-2558]      water       
+    854   [2559-2561]      water       
+    855   [2562-2564]      water       
+    856   [2565-2567]      water       
+    857   [2568-2570]      water       
+    858   [2571-2573]      water       
+    859   [2574-2576]      water       
+    860   [2577-2579]      water       
+    861   [2580-2582]      water       
+    862   [2583-2585]      water       
+    863   [2586-2588]      water       
+    864   [2589-2591]      water       
+    865   [2592-2594]      water       
+    866   [2595-2597]      water       
+    867   [2598-2600]      water       
+    868   [2601-2603]      water       
+    869   [2604-2606]      water       
+    870   [2607-2609]      water       
+    871   [2610-2612]      water       
+    872   [2613-2615]      water       
+    873   [2616-2618]      water       
+    874   [2619-2621]      water       
+    875   [2622-2624]      water       
+    876   [2625-2627]      water       
+    877   [2628-2630]      water       
+    878   [2631-2633]      water       
+    879   [2634-2636]      water       
+    880   [2637-2639]      water       
+    881   [2640-2642]      water       
+    882   [2643-2645]      water       
+    883   [2646-2648]      water       
+    884   [2649-2651]      water       
+    885   [2652-2654]      water       
+    886   [2655-2657]      water       
+    887   [2658-2660]      water       
+    888   [2661-2663]      water       
+    889   [2664-2666]      water       
+    890   [2667-2669]      water       
+    891   [2670-2672]      water       
+    892   [2673-2675]      water       
+    893   [2676-2678]      water       
+    894   [2679-2681]      water       
+    895   [2682-2684]      water       
+    896   [2685-2687]      water       
+    897   [2688-2690]      water       
+    898   [2691-2693]      water       
+    899   [2694-2696]      water       
+    900   [2697-2699]      water       
+    901   [2700-2702]      water       
+    902   [2703-2705]      water       
+    903   [2706-2708]      water       
+    904   [2709-2711]      water       
+    905   [2712-2714]      water       
+    906   [2715-2717]      water       
+    907   [2718-2720]      water       
+    908   [2721-2723]      water       
+    909   [2724-2726]      water       
+    910   [2727-2729]      water       
+    911   [2730-2732]      water       
+    912   [2733-2735]      water       
+    913   [2736-2738]      water       
+    914   [2739-2741]      water       
+    915   [2742-2744]      water       
+    916   [2745-2747]      water       
+    917   [2748-2750]      water       
+    918   [2751-2753]      water       
+    919   [2754-2756]      water       
+    920   [2757-2759]      water       
+    921   [2760-2762]      water       
+    922   [2763-2765]      water       
+    923   [2766-2768]      water       
+    924   [2769-2771]      water       
+    925   [2772-2774]      water       
+    926   [2775-2777]      water       
+    927   [2778-2780]      water       
+    928   [2781-2783]      water       
+    929   [2784-2786]      water       
+    930   [2787-2789]      water       
+    931   [2790-2792]      water       
+    932   [2793-2795]      water       
+    933   [2796-2798]      water       
+    934   [2799-2801]      water       
+    935   [2802-2804]      water       
+    936   [2805-2807]      water       
+    937   [2808-2810]      water       
+    938   [2811-2813]      water       
+    939   [2814-2816]      water       
+    940   [2817-2819]      water       
+    941   [2820-2822]      water       
+    942   [2823-2825]      water       
+    943   [2826-2828]      water       
+    944   [2829-2831]      water       
+    945   [2832-2834]      water       
+    946   [2835-2837]      water       
+    947   [2838-2840]      water       
+    948   [2841-2843]      water       
+    949   [2844-2846]      water       
+    950   [2847-2849]      water       
+    951   [2850-2852]      water       
+    952   [2853-2855]      water       
+    953   [2856-2858]      water       
+    954   [2859-2861]      water       
+    955   [2862-2864]      water       
+    956   [2865-2867]      water       
+    957   [2868-2870]      water       
+    958   [2871-2873]      water       
+    959   [2874-2876]      water       
+    960   [2877-2879]      water       
+    961   [2880-2882]      water       
+    962   [2883-2885]      water       
+    963   [2886-2888]      water       
+    964   [2889-2891]      water       
+    965   [2892-2894]      water       
+    966   [2895-2897]      water       
+    967   [2898-2900]      water       
+    968   [2901-2903]      water       
+    969   [2904-2906]      water       
+    970   [2907-2909]      water       
+    971   [2910-2912]      water       
+    972   [2913-2915]      water       
+    973   [2916-2918]      water       
+    974   [2919-2921]      water       
+    975   [2922-2924]      water       
+    976   [2925-2927]      water       
+    977   [2928-2930]      water       
+    978   [2931-2933]      water       
+    979   [2934-2936]      water       
+    980   [2937-2939]      water       
+    981   [2940-2942]      water       
+    982   [2943-2945]      water       
+    983   [2946-2948]      water       
+    984   [2949-2951]      water       
+    985   [2952-2954]      water       
+    986   [2955-2957]      water       
+    987   [2958-2960]      water       
+    988   [2961-2963]      water       
+    989   [2964-2966]      water       
+    990   [2967-2969]      water       
+    991   [2970-2972]      water       
+    992   [2973-2975]      water       
+    993   [2976-2978]      water       
+    994   [2979-2981]      water       
+    995   [2982-2984]      water       
+    996   [2985-2987]      water       
+    997   [2988-2990]      water       
+    998   [2991-2993]      water       
+    999   [2994-2996]      water       
+    1000  [2997-2999]      water       
+
+ .......................
+  MC Simulation Begins!  
+ ***********************
+  Steps:    1 / 50          Macrosteps/min: 3       ETA: Mon Nov 27 12:40:29 2017
+  Steps:    2 / 100         Macrosteps/min: 2       ETA: Mon Nov 27 12:40:34 2017
+  Steps:    3 / 150         Macrosteps/min: 2       ETA: Mon Nov 27 12:40:32 2017
+  Steps:    4 / 200         Macrosteps/min: 2       ETA: Mon Nov 27 12:40:34 2017
+  Steps:    5 / 250         Macrosteps/min: 2       ETA: Mon Nov 27 12:40:33 2017
+  Steps:    6 / 300         Macrosteps/min: 2       ETA: Mon Nov 27 12:40:35 2017
+  Steps:    7 / 350         Macrosteps/min: 2       ETA: Mon Nov 27 12:40:34 2017
+  Steps:    8 / 400         Macrosteps/min: 2       ETA: Mon Nov 27 12:40:35 2017
+  Steps:    9 / 450         Macrosteps/min: 2       ETA: Mon Nov 27 12:40:34 2017
+  Steps:   10 / 500         Macrosteps/min: 2       ETA: Mon Nov 27 12:40:35 2017
+
+ ..................................................................................
+  Energy: Nonbonded N² - Coulomb-Fanourgakis+Lennard-Jones (g2g cut=15.000000 Å)  
+ **********************************************************************************
+  Temperature              300 K
+  Dielectric constant      1
+  T∂ϵ/ϵ∂T                  -110.4
+  Bjerrum length           557 Å
+  Cutoff                   14.8 Å
+  Lennard-Jones pair parameters:
+
+         HW<->HW  σ =       0 Å  ϵ =       0 kT = 0 kJ/mol
+         OW<->HW  σ =   1.583 Å  ϵ =       0 kT = 0 kJ/mol
+         OW<->OW  σ =   3.165 Å  ϵ =  0.2607 kT = 0.6503 kJ/mol
+
+ ...........................
+  Energy: External Pressure  
+ ***************************
+  Pressure       40.0906 mM = 100000 Pa = 0.986925 atm
+  Number of molecules      1000 (1000 molecular + 0 atomic)
+
+ ...................
+  MC Steps and Time  
+ *******************
+  Steps (macro micro tot)  10∙50 = 500
+  Time elapsed             3.38333 min = 0.0563889 h
+
+ ....................................
+  Markov Move: P R O P A G A T O R S  
+ ************************************
+  Number of trials              500
+  Relative time consumption     0
+  Acceptance                    0﹪
+  Runfraction                   100﹪
+  Total energy change           0 kT
+  Average energy                -367908
+  Initial energy                -367921 kT
+  Current energy                -368010 kT
+  Changed                       -89.1488 kT
+  Absolute drift                3.08501e-09 kT
+  Relative drift                -8.38497e-13﹪
+
+ ...........................................
+  Markov Move: Isobaric Volume Fluctuations  
+ *******************************************
+  Number of trials              255
+  Relative time consumption     0.361461
+  Acceptance                    35.6863﹪
+  Runfraction                   100﹪
+  Total energy change           1.07707 kT
+  Displacement parameter        0.03
+  Number of molecules           1000 (1000 molecular + 0 atomic)
+  Pressure                      40.0906 mM = 100000 Pa = 0.986925 atm
+  Temperature                   300 K
+  Mean displacement             ∛√⟨dp²⟩ = 4.45178 Å
+  Osmotic coefficient           0.000725659
+
+                          ⟨V⟩            ∛⟨V⟩             ⟨1/V⟩             ⟨N/V⟩
+    Averages       30057.6 Å³       31.0922 Å   3.32706e-05 1/ Å³       55247.2 mM
+
+ .........................................
+  Markov Move: Group Rotation/Translation  
+ *****************************************
+  Number of trials              245000
+  Relative time consumption     0.492285
+  Acceptance                    34.0539﹪
+  Runfraction                   100﹪
+  Total energy change           -90.2259 kT
+  Max. translation              ±0.2 Å
+  Max. rotation                 ±11.4592°
+  Move Statistics:
+    Group name          Acc. ﹪     √⟨dR²⟩/Å     √⟨dθ²⟩/°
+    water               34.1        0.107       3.65        
+
+ .............................................
+  Analysis: Atomic Pair Distribution Function  
+ *********************************************
+  Sample interval               20
+  Number of sample events       25
+  Relative time                 0.00568654
+
+ ............................
+  Analysis: Charge Multipole  
+ ****************************
+  Sample interval               20
+  Number of sample events       25
+
+  Macromolecule                 ⟨Z⟩          ⟨Z²⟩-⟨Z⟩²     ⟨μ⟩          ⟨μ²⟩-⟨μ⟩²     ⟨|Quad|⟩      
+  water                         0            0             0.486356     1.86517e-13  -2.21681e-21 
+
+ .........................
+  Analysis: System energy  
+ *************************
+  Sample interval               20
+  Number of sample events       25
+  Relative time                 0.0120889
+
+ .............................
+  Analysis: MultipoleAnalysis  
+ *****************************
+  Sample interval               20
+  Number of sample events       25
+  Relative time                 0.011818
+
+ ....................................
+  Analysis: Debye Formula Scattering  
+ ************************************
+  Sample interval               20
+  Number of sample events       25
+  Relative time                 0.11458
+
+ ..........................
+  Analysis: Widom Molecule  
+ **************************
+  Sample interval               20
+  Number of sample events       25
+  Insertion directions          1 1 1
+  Insertion molecule            water
+  Particle density              0.0332709Å⁻³
+  Excess chemical potential     33.01 kT
+
+ ...................................
+  Analysis: XTC trajectory reporter  
+ ***********************************
+  Reference:                    http://manual.gromacs.org/online/xtc.html
+  Sample interval               20
+  Number of sample events       25
+  Filename                      water2.xtc
+
+ ...........
+  Unittests  
+ ***********
+  Unittest state                       unstable
+  Test file                            water2.test (read)
+  Number of tests                      9
+  Number of failed tests               0
+Writing to file 'water2.pqr'. OK!
+Writing space state file 'state'. OK!
+<end of output>
+Test time = 203.25 sec
+----------------------------------------------------------
+Test Passed.
+"example_water2" end time: Nov 27 12:40 CET
+"example_water2" time elapsed: 00:03:23
+----------------------------------------------------------
+
+12/13 Testing: example_cigarsenergy
+12/13 Test: example_cigarsenergy
+Command: "/home/bjorn/github/NewAllGo/src/examples/cigarsenergy.run"
+Directory: /home/bjorn/github/NewAllGo/src/examples
+"example_cigarsenergy" start time: Nov 27 12:40 CET
+Output:
+----------------------------------------------------------
+
+ ..........................................
+  Energy: Nonbonded N² - CigarSphereSplit  
+ ******************************************
+  Cos² attraction (mixed) pair parameters:
+
+     CPSC<->CPSC  σ =      10 Å  ϵ =   1.001 kT = 2.479 kJ/mol
+      PSC<->CPSC  σ =      10 Å  ϵ =   1.001 kT = 2.479 kJ/mol
+       PSC<->PSC  σ =      10 Å  ϵ =   1.001 kT = 2.479 kJ/mol
+  WeeksChandlerAnderson pair parameters:
+
+     CPSC<->CPSC  σ =      10 Å  ϵ =   1.001 kT = 2.479 kJ/mol
+      PSC<->CPSC  σ =      10 Å  ϵ =   1.001 kT = 2.479 kJ/mol
+       PSC<->PSC  σ =      10 Å  ϵ =   1.001 kT = 2.479 kJ/mol
+  Cos² attraction (mixed) pair parameters:
+
+     CPSC<->CPSC  σ =      10 Å  ϵ =   1.001 kT = 2.479 kJ/mol
+      PSC<->CPSC  σ =      10 Å  ϵ =   1.001 kT = 2.479 kJ/mol
+       PSC<->PSC  σ =      10 Å  ϵ =   1.001 kT = 2.479 kJ/mol
+  WeeksChandlerAnderson pair parameters:
+
+     CPSC<->CPSC  σ =      10 Å  ϵ =   1.001 kT = 2.479 kJ/mol
+      PSC<->CPSC  σ =      10 Å  ϵ =   1.001 kT = 2.479 kJ/mol
+       PSC<->PSC  σ =      10 Å  ϵ =   1.001 kT = 2.479 kJ/mol
+  Cos² attraction (mixed) pair parameters:
+
+     CPSC<->CPSC  σ =      10 Å  ϵ =   1.001 kT = 2.479 kJ/mol
+      PSC<->CPSC  σ =      10 Å  ϵ =   1.001 kT = 2.479 kJ/mol
+       PSC<->PSC  σ =      10 Å  ϵ =   1.001 kT = 2.479 kJ/mol
+  WeeksChandlerAnderson pair parameters:
+
+     CPSC<->CPSC  σ =      10 Å  ϵ =   1.001 kT = 2.479 kJ/mol
+      PSC<->CPSC  σ =      10 Å  ϵ =   1.001 kT = 2.479 kJ/mol
+       PSC<->PSC  σ =      10 Å  ϵ =   1.001 kT = 2.479 kJ/mol
+
+ ...........
+  Unittests  
+ ***********
+  Unittest state                       unstable
+  Test file                            cigarsenergy.test (read)
+  Number of tests                      1
+  Number of failed tests               0
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"example_cigarsenergy" end time: Nov 27 12:40 CET
+"example_cigarsenergy" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/13 Testing: example_cigars2fibrils
+13/13 Test: example_cigars2fibrils
+Command: "/home/bjorn/github/NewAllGo/src/examples/cigars2fibrils.run"
+Directory: /home/bjorn/github/NewAllGo/src/examples
+"example_cigars2fibrils" start time: Nov 27 12:40 CET
+Output:
+----------------------------------------------------------
+.......................................................................
+  Welcome to FAUNUS - A Framework for Molecule Simulation.
+  Copyright (C) 2002-2017 Mikael Lund
+
+  This program is free software; you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation; either version 2 of the License, or
+  (at your option) any later version.
+
+   ___________                               _________
+   \_   _____/_____    __ __   ____   __ __ /   _____/
+    |    __)  \__  \  |  |  \ /    \ |  |  \\_____  \
+    |     \    / __ \_|  |  /|   |  \|  |  //        \
+    \___  /   (____  /|____/ |___|  /|____//_______  /
+        \/         \/             \/               \/
+
+  Developed by:
+    Mikael Lund, Björn Persson, Martin Trulsson,
+    Ondřej Maršálek, Christophe Labbez, Andre Teixeira,
+    Anıl Kurut, Chris Evers, Robert Vácha, Axel Thuresson,
+    Björn Stenqvist, João Henriques, Alexei Abrikossov,
+    Giulio Tesei, Lukáš Sukeník, Niels Kouwenhoven
+
+  References:
+    http://doi.org/nvn
+    http://doi.org/dfqgch
+
+  Library build details:
+    Compiled on Nov 27 2017 12:29:08
+    Git commit f5e8ecc (2017-11-26 15:01:11 +0100)
+***********************************************************************
+
+ .................
+  Atom Properties  
+ *****************
+  Number of entries:       3
+  Element info:
+    unk   CPSC  PSC   
+
+ ...............................
+  Simulation Space and Geometry  
+ *******************************
+  Boundary                 Cuboid
+  Volume                   1e+06 Å³ = 1000 nm³ = 1e-21 liters
+  Sidelengths              100 100 100 (Å)
+  Scale directions         XYZ
+  Number of particles      30
+  Electroneutrality        Yes 0
+  System sanity check      Passed
+  Number of molecule types 1
+  Groups:
+    1     [0-29]           PSCbulk     N/V = 3e-05  Å⁻³ = 49.8162 mM  
+
+ ..........................................
+  Energy: Nonbonded N² - CigarSphereSplit  
+ ******************************************
+  Cos² attraction (mixed) pair parameters:
+
+     CPSC<->CPSC  σ =      10 Å  ϵ =       1 kT = 2.479 kJ/mol
+      PSC<->CPSC  σ =      10 Å  ϵ =       1 kT = 2.479 kJ/mol
+       PSC<->PSC  σ =      10 Å  ϵ =       1 kT = 2.479 kJ/mol
+  WeeksChandlerAnderson pair parameters:
+
+     CPSC<->CPSC  σ =      10 Å  ϵ =       1 kT = 2.479 kJ/mol
+      PSC<->CPSC  σ =      10 Å  ϵ =       1 kT = 2.479 kJ/mol
+       PSC<->PSC  σ =      10 Å  ϵ =       1 kT = 2.479 kJ/mol
+  Cos² attraction (mixed) pair parameters:
+
+     CPSC<->CPSC  σ =      10 Å  ϵ =       1 kT = 2.479 kJ/mol
+      PSC<->CPSC  σ =      10 Å  ϵ =       1 kT = 2.479 kJ/mol
+       PSC<->PSC  σ =      10 Å  ϵ =       1 kT = 2.479 kJ/mol
+  WeeksChandlerAnderson pair parameters:
+
+     CPSC<->CPSC  σ =      10 Å  ϵ =       1 kT = 2.479 kJ/mol
+      PSC<->CPSC  σ =      10 Å  ϵ =       1 kT = 2.479 kJ/mol
+       PSC<->PSC  σ =      10 Å  ϵ =       1 kT = 2.479 kJ/mol
+  Cos² attraction (mixed) pair parameters:
+
+     CPSC<->CPSC  σ =      10 Å  ϵ =       1 kT = 2.479 kJ/mol
+      PSC<->CPSC  σ =      10 Å  ϵ =       1 kT = 2.479 kJ/mol
+       PSC<->PSC  σ =      10 Å  ϵ =       1 kT = 2.479 kJ/mol
+  WeeksChandlerAnderson pair parameters:
+
+     CPSC<->CPSC  σ =      10 Å  ϵ =       1 kT = 2.479 kJ/mol
+      PSC<->CPSC  σ =      10 Å  ϵ =       1 kT = 2.479 kJ/mol
+       PSC<->PSC  σ =      10 Å  ϵ =       1 kT = 2.479 kJ/mol
+
+ .......................
+  MC Simulation Begins!  
+ ***********************
+Writing to file 'cigars2fibrils-mov'. OK!
+  Steps:    1 / 2000        Macrosteps/min: 70      ETA: Mon Nov 27 12:40:52 2017
+Writing to file 'cigars2fibrils-mov'. OK!
+  Steps:    2 / 4000        Macrosteps/min: 69      ETA: Mon Nov 27 12:40:52 2017
+Writing to file 'cigars2fibrils-mov'. OK!
+  Steps:    3 / 6000        Macrosteps/min: 69      ETA: Mon Nov 27 12:40:52 2017
+Writing to file 'cigars2fibrils-mov'. OK!
+  Steps:    4 / 8000        Macrosteps/min: 68      ETA: Mon Nov 27 12:40:52 2017
+Writing to file 'cigars2fibrils-mov'. OK!
+  Steps:    5 / 10000       Macrosteps/min: 68      ETA: Mon Nov 27 12:40:53 2017
+Writing to file 'cigars2fibrils-mov'. OK!
+  Steps:    6 / 12000       Macrosteps/min: 68      ETA: Mon Nov 27 12:40:53 2017
+Writing to file 'cigars2fibrils-mov'. OK!
+  Steps:    7 / 14000       Macrosteps/min: 67      ETA: Mon Nov 27 12:40:53 2017
+Writing to file 'cigars2fibrils-mov'. OK!
+  Steps:    8 / 16000       Macrosteps/min: 67      ETA: Mon Nov 27 12:40:53 2017
+Writing to file 'cigars2fibrils-mov'. OK!
+  Steps:    9 / 18000       Macrosteps/min: 67      ETA: Mon Nov 27 12:40:52 2017
+Writing to file 'cigars2fibrils-mov'. OK!
+  Steps:   10 / 20000       Macrosteps/min: 67      ETA: Mon Nov 27 12:40:52 2017
+Writing to file 'cigars2fibrils-mov'. OK!
+  Steps:   11 / 22000       Macrosteps/min: 66      ETA: Mon Nov 27 12:40:53 2017
+Writing to file 'cigars2fibrils-mov'. OK!
+  Steps:   12 / 24000       Macrosteps/min: 66      ETA: Mon Nov 27 12:40:53 2017
+Writing to file 'cigars2fibrils-mov'. OK!
+  Steps:   13 / 26000       Macrosteps/min: 66      ETA: Mon Nov 27 12:40:53 2017
+Writing to file 'cigars2fibrils-mov'. OK!
+  Steps:   14 / 28000       Macrosteps/min: 66      ETA: Mon Nov 27 12:40:53 2017
+Writing to file 'cigars2fibrils-mov'. OK!
+  Steps:   15 / 30000       Macrosteps/min: 66      ETA: Mon Nov 27 12:40:53 2017
+Writing to file 'cigars2fibrils-mov'. OK!
+  Steps:   16 / 32000       Macrosteps/min: 66      ETA: Mon Nov 27 12:40:53 2017
+Writing to file 'cigars2fibrils-mov'. OK!
+  Steps:   17 / 34000       Macrosteps/min: 66      ETA: Mon Nov 27 12:40:53 2017
+Writing to file 'cigars2fibrils-mov'. OK!
+  Steps:   18 / 36000       Macrosteps/min: 66      ETA: Mon Nov 27 12:40:53 2017
+Writing to file 'cigars2fibrils-mov'. OK!
+  Steps:   19 / 38000       Macrosteps/min: 66      ETA: Mon Nov 27 12:40:53 2017
+Writing to file 'cigars2fibrils-mov'. OK!
+  Steps:   20 / 40000       Macrosteps/min: 65      ETA: Mon Nov 27 12:40:54 2017
+Writing to file 'cigars2fibrils-mov'. OK!
+
+ ...................
+  MC Steps and Time  
+ *******************
+  Steps (macro micro tot)  20∙2000 = 40000
+  Time elapsed             0.3 min = 0.005 h
+
+ ....................................
+  Markov Move: P R O P A G A T O R S  
+ ************************************
+  Number of trials              40000
+  Relative time consumption     0
+  Acceptance                    0﹪
+  Runfraction                   100﹪
+  Total energy change           0 kT
+  Average energy                92695.7
+  Initial energy                2.1046e+09 kT
+  Current energy                -946.299 kT
+  Changed                       -2.1046e+09 kT
+  Absolute drift                -1.36947e-05 kT
+  Relative drift                -6.50705e-13﹪
+
+ .......................................
+  Markov Move: Single Particle Rotation  
+ ***************************************
+  Number of trials              596610
+  Relative time consumption     0.501191
+  Acceptance                    76.3311﹪
+  Runfraction                   100﹪
+  Total energy change           -1.04038e+09 kT
+  Average moves/particle        19887
+
+  Individual particle rotation:
+
+           dp    Acc. ﹪     ⟨dθ²⟩/°     √⟨dθ²⟩/°
+    PSC    5     76.3        19.1        4.37        
+
+ ..........................................
+  Markov Move: Single Particle Translation  
+ ******************************************
+  Number of trials              603390
+  Relative time consumption     0.496842
+  Acceptance                    60.7098﹪
+  Runfraction                   100﹪
+  Total energy change           -1.06422e+09 kT
+  Average moves/particle        20113
+  Displacement vector           1 1 1
+
+  Individual particle movement:
+
+           dp    Acc. ﹪     Nmoves      ⟨r²⟩/Å²     √⟨r²⟩/Å
+    PSC    1     60.7        603390      0.14        0.374       
+<end of output>
+Test time =  18.22 sec
+----------------------------------------------------------
+Test Passed.
+"example_cigars2fibrils" end time: Nov 27 12:40 CET
+"example_cigars2fibrils" time elapsed: 00:00:18
+----------------------------------------------------------
+
+End testing: Nov 27 12:40 CET

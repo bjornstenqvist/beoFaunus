@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -funroll-loops -Wall -Wno-unknown-pragmas -Wextra -Wno-unused-parameter -Wno-reorder -O2 -g -D_ndebug  -shared -Wl,-soname,pyfaunus.so -o pyfaunus.so CMakeFiles/pyfaunus.dir/pyfaunus.cpp.o  -Wl,-rpath,/home/work/BackupWork/NewAllGo/src ../src/libfaunus.so -lpython3.8 ../src/xdrfile/libxdrfile.a 
