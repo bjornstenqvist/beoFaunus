@@ -1,0 +1,309 @@
+{
+    "atomlist": {
+        "Cap": {
+            "q": 10.0,
+            "q_rho": 3.183098861837905,
+            "useRho": true,
+            "sigma": 1.0,
+            "dp": 0.3,
+            "dprot": 0.5,
+            "cap_centerV": "0.800000 0.800000",
+            "charge_positionV": "0.000000 0.000000",
+            "cap_radiusV": "0.500000 0.500000",
+            "cav_posX": "1.000000 -1.000000",
+            "cav_posY": "0.000000 0.000000",
+            "cav_posZ": "0.000000 0.000000",
+            "eps": 1000.0
+        },
+        "Sph": {
+            "q": -6.4,
+            "q_rho": -3.183098861837905,
+            "useRho": true,
+            "sigma": 1.0,
+            "dp": 0.01,
+            "dprot": 0.0,
+            "cap_center": 0.0,
+            "charge_position": 0.0,
+            "cap_radius": 0.0,
+            "eps": 1000.0
+        }
+    },
+    "seed": 1,
+    "moleculelist": {
+        "Capsphere": {
+            "structure": "cap.aam",
+            "Ninit": 10,
+            "insdir": "1 1 1",
+            "rotate": false
+        },
+        "Sphere": {
+            "structure": "sph.aam",
+            "Ninit": 10,
+            "insdir": "1 1 1",
+            "rotate": false
+        }
+    },
+    "energy": {
+        "nonbonded": {
+            "coulombtype": "none",
+            "epsr": 80,
+            "cutoff": 8.82804752561422,
+            "debyelength": 0.09629530032424033
+        }
+    },
+    "analysis": {
+        "povray": {
+            "file1": "multicap1.pov",
+            "camera1": "-10 0 0",
+            "file2": "multicap2.pov",
+            "camera2": "0 -10 0",
+            "file3": "multicap3.pov",
+            "camera3": "0 0 -10",
+            "file_diff": "multicap_diff.pov"
+        },
+        "_xtcfile": {
+            "file": "multicap.xtc",
+            "nstep": 1000
+        },
+        "energyfile": {
+            "file": "energy.dat",
+            "nstep": 100
+        },
+        "pqrfile": {
+            "file": "confout.pqr"
+        },
+        "statefile": {
+            "file": "state"
+        },
+        "capanalysisCC": {
+            "nstep": 20,
+            "cutoffBound": 1.1,
+            "cutoffAnalysis": 29.128192785039946,
+            "pairs": [
+                {
+                    "name1": "Cap",
+                    "name2": "Cap",
+                    "dim": 3,
+                    "dr": 0.05,
+                    "cutoff": 1.1,
+                    "file": "capanalysis_cc.dat"
+                }
+            ]
+        },
+        "_capanalysisCS": {
+            "nstep": 20,
+            "cutoffBound": 1.1,
+            "cutoffAnalysis": 29.128192785039946,
+            "pairs": [
+                {
+                    "name1": "Cap",
+                    "name2": "Sph",
+                    "dim": 3,
+                    "dr": 0.05,
+                    "cutoff": 1.1,
+                    "file": "capanalysis_cs.dat"
+                }
+            ]
+        },
+        "_capanalysisSC": {
+            "nstep": 20,
+            "cutoffBound": 1.1,
+            "cutoffAnalysis": 29.128192785039946,
+            "pairs": [
+                {
+                    "name1": "Sph",
+                    "name2": "Cap",
+                    "dim": 3,
+                    "dr": 0.05,
+                    "cutoff": 1.1,
+                    "file": "capanalysis_sc.dat"
+                }
+            ]
+        },
+        "_capanalysisCC": {
+            "nstep": 20,
+            "cutoffBound": 1.1,
+            "cutoffAnalysis": 29.128192785039946,
+            "pairs": [
+                {
+                    "name1": "Sph",
+                    "name2": "Sph",
+                    "dim": 3,
+                    "dr": 0.05,
+                    "cutoff": 1.1,
+                    "file": "capanalysis_ss.dat"
+                }
+            ]
+        },
+        "atomrdf": {
+            "nstep": 20,
+            "pairs": [
+                {
+                    "name1": "Cap",
+                    "name2": "Cap",
+                    "dim": 3,
+                    "dr": 0.05,
+                    "cutoff": 1.1,
+                    "file": "capanalysis_cc.dat.rdf"
+                },
+                {
+                    "name1": "Cap",
+                    "name2": "Sph",
+                    "dim": 3,
+                    "dr": 0.05,
+                    "cutoff": 1.1,
+                    "file": "capanalysis_cs.dat.rdf"
+                },
+                {
+                    "name1": "Sph",
+                    "name2": "Sph",
+                    "dim": 3,
+                    "dr": 0.05,
+                    "cutoff": 1.1,
+                    "file": "capanalysis_ss.dat.rdf"
+                }
+            ]
+        }
+    },
+    "moves": {
+        "moltransrot": {
+            "center_rotation": true,
+            "Capsphere": {
+                "dp": 0.05,
+                "dprot": 0.1,
+                "dir": "1 1 1",
+                "dir2": "0 0 1",
+                "permol": true,
+                "prob": 1.0
+            },
+            "Sphere": {
+                "dp": 0.25,
+                "dprot": 0.0,
+                "dir": "1 1 1",
+                "dir2": "0 0 1",
+                "permol": true,
+                "prob": 1.0
+            }
+        },
+        "moltransrotLarge": {
+            "center_rotation": true,
+            "Capsphere": {
+                "dp": 1.0,
+                "dprot": 1.0,
+                "dir": "1 1 1",
+                "dir2": "0 0 1",
+                "permol": true,
+                "prob": 1.0
+            },
+            "Sphere": {
+                "dp": 1.0,
+                "dprot": 0.0,
+                "dir": "1 1 1",
+                "dir2": "0 0 1",
+                "permol": true,
+                "prob": 1.0
+            }
+        },
+        "ClusterMove": {
+            "center_rotation": true,
+            "cluster_probability": 1.0,
+            "dir": "1 1 1",
+            "dir2": "0 0 1",
+            "Sphere": {
+                "spread": true,
+                "threshold": 0.0,
+                "dp": 1.0,
+                "dprot": 5.0,
+                "dir": "1 1 1",
+                "dir2": "0 0 1",
+                "prob": 1.0,
+                "staticmol": []
+            },
+            "Capsphere": {
+                "spread": true,
+                "threshold": 0.0,
+                "dp": 1.0,
+                "dprot": 5.0,
+                "dir": "1 1 1",
+                "dir2": "0 0 1",
+                "prob": 1.0,
+                "staticmol": []
+            }
+        },
+        "_ClusterMove2": {
+            "center_rotation": true,
+            "cluster_probability": 1.0,
+            "dir": "1 1 1",
+            "dir2": "0 0 1",
+            "Sphere": {
+                "spread": true,
+                "threshold": 0.1,
+                "dp": 1.0,
+                "dprot": 5.0,
+                "dir": "1 1 1",
+                "dir2": "0 0 1",
+                "prob": 1.0,
+                "staticmol": []
+            },
+            "Capsphere": {
+                "spread": true,
+                "threshold": 0.1,
+                "dp": 1.0,
+                "dprot": 5.0,
+                "dir": "1 1 1",
+                "dir2": "0 0 1",
+                "prob": 1.0,
+                "staticmol": []
+            }
+        },
+        "_ClusterMove3": {
+            "center_rotation": true,
+            "cluster_probability": 1.0,
+            "dir": "1 1 1",
+            "dir2": "0 0 1",
+            "Sphere": {
+                "spread": false,
+                "threshold": 0.1,
+                "dp": 1.0,
+                "dprot": 5.0,
+                "dir": "1 1 1",
+                "dir2": "0 0 1",
+                "prob": 1.0,
+                "staticmol": []
+            },
+            "Capsphere": {
+                "spread": false,
+                "threshold": 0.1,
+                "dp": 1.0,
+                "dprot": 5.0,
+                "dir": "1 1 1",
+                "dir2": "0 0 1",
+                "prob": 1.0,
+                "staticmol": []
+            }
+        },
+        "_ctransnr": {
+            "dp": 3.0,
+            "skipenergy": false,
+            "prob": 1.0
+        },
+        "_ctransnr_ref": {
+            "dp": 2.0,
+            "skipenergy": false,
+            "prob": 1.0
+        }
+    },
+    "system": {
+        "temperature": 293.15,
+        "geometry": {
+            "length": 9.128192785039946,
+            "scaledir": "XYZ"
+        },
+        "mcloop": {
+            "macro": 10,
+            "micro": 10000.0
+        },
+        "atomlist": "multicap.json",
+        "moleculelist": "multicap.json"
+    }
+}

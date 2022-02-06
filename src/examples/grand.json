@@ -1,0 +1,80 @@
+{
+    "analysis": {
+        "widomscaled": {
+            "ninsert": 15,
+            "nstep": 20,
+            "lB": 7.0
+        },
+        "statefile": {
+            "file": "state"
+        },
+        "widom": {
+            "ninsert": 15,
+            "nstep": 20,
+            "particles": [
+                "Na",
+                "Cl"
+            ]
+        },
+        "pqrfile": {
+            "file": "grand.pqr"
+        }
+    },
+    "moves": {
+        "atomtranslate": {
+            "salt": {
+                "prob": 0.01,
+                "permol": true
+            }
+        },
+        "atomgc": {
+            "molecule": "salt"
+        },
+        "random": {
+            "hardware": true
+        }
+    },
+    "atomlist": {
+        "Na": {
+            "q": 1.0,
+            "r": 2.0,
+            "activity": 0.05,
+            "dp": 50
+        },
+        "Cl": {
+            "q": -1.0,
+            "r": 2.0,
+            "activity": 0.05,
+            "dp": 50
+        }
+    },
+    "moleculelist": {
+        "salt": {
+            "atomic": true,
+            "atoms": "Na Cl",
+            "Ninit": 20
+        }
+    },
+    "system": {
+        "mcloop": {
+            "micro": 100000,
+            "macro": 10
+        },
+        "temperature": 298.15,
+        "coulomb": {
+            "epsr": 80
+        },
+        "unittest": {
+            "testfile": "grand.test",
+            "stable": false
+        },
+        "geometry": {
+            "radius": 80
+        }
+    },
+    "energy": {
+        "nonbonded": {
+            "epsr": 80
+        }
+    }
+}

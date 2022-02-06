@@ -1,0 +1,82 @@
+{
+    "moleculelist": {
+        "polymer": {
+            "Ninit": 1,
+            "structure": "slitpolymer.aam"
+        }
+    },
+    "atomlist": {
+        "MM": {
+            "r": 3.0,
+            "q": 1.0,
+            "dp": 10
+        }
+    },
+    "energy": {
+        "gouychapman": {
+            "phi0": -2
+        },
+        "nonbonded": {
+            "epsr": 78.9,
+            "debyelength": 11.649287399305
+        }
+    },
+    "analysis": {
+        "polymershape": {
+            "mollist": [
+                "polymer"
+            ],
+            "nstep": 10
+        }
+    },
+    "system": {
+        "geometry": {
+            "length": [
+                300,
+                300,
+                154
+            ]
+        },
+        "mcloop": {
+            "micro": 1000000,
+            "macro": 10
+        },
+        "unittest": {
+            "stable": false,
+            "testfile": "slitpolymer.test"
+        },
+        "temperature": 298
+    },
+    "moves": {
+        "pivot": {
+            "polymer": {
+                "minlen": 1,
+                "dp": 6,
+                "maxlen": 6,
+                "permol": true
+            }
+        },
+        "moltransrot": {
+            "polymer": {
+                "dp": 100,
+                "dprot": 6,
+                "permol": true
+            }
+        },
+        "crankshaft": {
+            "polymer": {
+                "minlen": 1,
+                "dp": 6,
+                "maxlen": 6,
+                "permol": true
+            }
+        },
+        "reptate": {
+            "polymer": {
+                "prob": 1.0,
+                "permol": true,
+                "bondlength": 4.9
+            }
+        }
+    }
+}

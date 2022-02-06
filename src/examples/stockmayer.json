@@ -1,0 +1,122 @@
+{
+    "moleculelist": {
+        "sol": {
+            "atomic": true, 
+            "Ninit": 100, 
+            "atoms": "dip"
+        }
+    }, 
+    "energy": {
+        "nonbonded": {
+            "cutoff": 14.4315, 
+            "coulombtype": "wolf", 
+            "ewald": {
+                "cutoff": 14.4315, 
+                "eps_surf": 100000000000.0, 
+                "update_frequency": 1000, 
+                "alpha": 0.14, 
+                "spherical_sum": true, 
+                "cutoffK": 0, 
+                "isotropic_pbc": true
+            }, 
+            "eps_rf": 140.0, 
+            "alpha": 0.21, 
+            "epsr": 1.0
+        }
+    }, 
+    "system": {
+        "geometry": {
+            "length": 29.6336
+        }, 
+        "mcloop": {
+            "macro": 10, 
+            "micro": 1000
+        }, 
+        "unittest": {
+            "testfile": "stockmayer.test", 
+            "stable": false
+        }, 
+        "temperature": 315.8
+    }, 
+    "analysis": {
+        "multipoleanalysis": {
+            "cutoff": 14.4315, 
+            "pairs": [
+                {
+                    "dr": 0.1, 
+                    "dim": 3, 
+                    "name2": "sol", 
+                    "file": "rdf_ss.dat", 
+                    "name1": "sol"
+                }
+            ], 
+            "kappa": 0.21, 
+            "eps_rf": 140.0, 
+            "nstep": 20, 
+            "dielectric": "reactionfield"
+        }, 
+        "pqrfile": {
+            "file": "stockmayer.pqr"
+        }, 
+        "energyfile": {
+            "nstep": 20, 
+            "file": "energy.dat"
+        }, 
+        "atomrdf": {
+            "pairs": [
+                {
+                    "dr": 0.1, 
+                    "dim": 3, 
+                    "name2": "dip", 
+                    "file": "rdf_dipdip.dat", 
+                    "name1": "dip"
+                }
+            ], 
+            "nstep": 10
+        }, 
+        "statefile": {
+            "file": "state"
+        }, 
+        "_xtcfile": {
+            "nstep": 20, 
+            "file": "stockmayer.xtc"
+        }, 
+        "kirkwoodfactor": {
+            "pairs": [
+                {
+                    "dr": 0.1, 
+                    "dim": 3, 
+                    "name2": "dip", 
+                    "file": "kwfactor_dipdip.dat", 
+                    "name1": "dip"
+                }
+            ], 
+            "nstep": 20
+        }
+    }, 
+    "atomlist": {
+        "dip": {
+            "dprot": 270, 
+            "eps": 1.97, 
+            "mu": "0 0 1.652", 
+            "alpha": "0 0 0 0 0 0", 
+            "sigma": 2.8863, 
+            "dp": 0.7
+        }
+    }, 
+    "seed": 0, 
+    "moves": {
+        "atomrotate": {
+            "sol": {
+                "peratom": true, 
+                "prob": 1.0
+            }
+        }, 
+        "atomtranslate": {
+            "sol": {
+                "peratom": true, 
+                "prob": 1.0
+            }
+        }
+    }
+}

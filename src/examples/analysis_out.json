@@ -1,0 +1,45 @@
+{
+    "Atomic Pair Distribution Function": {
+        "Cap-Cap": {
+            "Rhyper": -1,
+            "dim": 3,
+            "dr": 0.05,
+            "file": "capanalysis_cc.dat.rdf",
+            "file2": "capanalysis_cc.dat.rdf.avg"
+        },
+        "Cap-Sph": {
+            "Rhyper": -1,
+            "dim": 3,
+            "dr": 0.05,
+            "file": "capanalysis_cs.dat.rdf",
+            "file2": "capanalysis_cs.dat.rdf.avg"
+        },
+        "Sph-Sph": {
+            "Rhyper": -1,
+            "dim": 3,
+            "dr": 0.05,
+            "file": "capanalysis_ss.dat.rdf",
+            "file2": "capanalysis_ss.dat.rdf.avg"
+        },
+        "nstep": 20,
+        "relative time": 0.00654412516538951,
+        "samples": 5000
+    },
+    "Capanalysis": {
+        "Cap-Cap": {
+            "Rhyper": -1,
+            "dim": 3,
+            "dr": 0.05,
+            "file": "capanalysis_cc.dat",
+            "file2": "capanalysis_cc.dat.avg"
+        },
+        "nstep": 20,
+        "relative time": 0.0323505443335381,
+        "samples": 5000
+    },
+    "System energy": {
+        "nstep": 100,
+        "relative time": 0.00541795593210967,
+        "samples": 1000
+    }
+}

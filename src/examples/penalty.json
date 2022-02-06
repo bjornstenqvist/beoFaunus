@@ -1,0 +1,53 @@
+{
+    "system": {
+        "unittest": {
+            "testfile": "penalty.test",
+            "stable": false
+        },
+        "geometry": {
+            "length": 4
+        },
+        "mcloop": {
+            "macro": 10,
+            "micro": 50000
+        }
+    },
+    "moleculelist": {
+        "myparticle": {
+            "atomic": true,
+            "atoms": "A",
+            "Ninit": 1
+        }
+    },
+    "energy": {
+        "penalty": {
+            "xyz": {
+                "f0": 0,
+                "update": 10000.0,
+                "scale": 0.5,
+                "hi2": 2,
+                "lo1": -2,
+                "bw1": 0.1,
+                "first": "myparticle",
+                "bw2": 0.1,
+                "dir": "1 1 0",
+                "hi1": 2,
+                "lo2": -2
+            }
+        }
+    },
+    "moves": {
+        "atomtranslate": {
+            "myparticle": {
+                "prob": 1,
+                "peratom": true
+            }
+        }
+    },
+    "atomlist": {
+        "A": {
+            "r": 0,
+            "dp": 0.5
+        }
+    }
+}

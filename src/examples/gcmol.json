@@ -1,0 +1,65 @@
+{
+    "system": {
+        "geometry": {
+            "length": 19.0288
+        },
+        "mcloop": {
+            "macro": 10,
+            "micro": 100000
+        },
+        "unittest": {
+            "testfile": "gcmol.test",
+            "stable": false
+        }
+    },
+    "energy": {
+        "nonbonded": {
+            "epsr": 1.0,
+            "cutoff": 9.0
+        }
+    },
+    "atomlist": {
+        "OW": {
+            "q": -0.8476,
+            "sigma": 3.2,
+            "eps": 0.65
+        },
+        "HW": {
+            "q": 0.4238,
+            "sigma": 0.0,
+            "eps": 0
+        }
+    },
+    "moleculelist": {
+        "water": {
+            "activity": 0.0009386,
+            "structure": "water.aam",
+            "Ninit": 200
+        }
+    },
+    "analysis": {
+        "pqrfile": {
+            "file": "confout.pqr"
+        },
+        "statefile": {
+            "file": "state"
+        }
+    },
+    "moves": {
+        "gc": {
+            "moleculecombinations": {
+                "water": {
+                    "molecules": "water"
+                }
+            }
+        },
+        "moltransrot": {
+            "water": {
+                "dp": 0.5,
+                "dprot": 0.5,
+                "prob": 0.001,
+                "permol": true
+            }
+        }
+    }
+}

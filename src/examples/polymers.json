@@ -1,0 +1,139 @@
+{
+    "moves": {
+        "crankshaft": {
+            "polymer": {
+                "maxlen": 10,
+                "minlen": 2,
+                "dp": 6.3,
+                "permol": true
+            }
+        },
+        "isobaric": {
+            "prob": 0.1,
+            "dp": 2,
+            "pressure": 113.2
+        },
+        "atomtranslate": {
+            "counterions": {
+                "prob": 1.0,
+                "peratom": true
+            },
+            "polymer": {
+                "prob": 1.0,
+                "peratom": true,
+                "permol": true
+            }
+        },
+        "pivot": {
+            "polymer": {
+                "maxlen": 1000,
+                "minlen": 1,
+                "dp": 6.3,
+                "permol": true
+            }
+        },
+        "moltransrot": {
+            "polymer": {
+                "dprot": 6,
+                "permol": true,
+                "dp": 50,
+                "dir": "1 1 1"
+            }
+        }
+    },
+    "analysis": {
+        "statefile": {
+            "file": "state"
+        },
+        "pqrfile": {
+            "file": "polymers.pqr"
+        },
+        "xtcfile": {
+            "nstep": 10,
+            "file": "polymers.xtc"
+        },
+        "polymershape": {
+            "nstep": 10,
+            "mollist": [
+                "polymer"
+            ]
+        },
+        "molrdf": {
+            "nstep": 20,
+            "pairs": [
+                {
+                    "dr": 0.1,
+                    "name1": "polymer",
+                    "dim": 3,
+                    "file": "rdf.dat",
+                    "name2": "polymer"
+                }
+            ]
+        }
+    },
+    "atomlist": {
+        "MM": {
+            "q": 1.0,
+            "r": 3.0,
+            "dp": 10
+        },
+        "Cl": {
+            "q": -1.0,
+            "r": 2.0,
+            "dp": 110
+        },
+        "Na": {
+            "q": 1.0,
+            "r": 2.0,
+            "dp": 110
+        }
+    },
+    "system": {
+        "geometry": {
+            "radius": 100
+        },
+        "unittest": {
+            "testfile": "polymers.test",
+            "stable": false
+        },
+        "mcloop": {
+            "macro": 10,
+            "micro": 20000
+        }
+    },
+    "moleculelist": {
+        "counterions": {
+            "atoms": "Cl",
+            "atomic": true,
+            "Ninit": 32
+        },
+        "polymer": {
+            "bonds": {
+                "2 3": {
+                    "req": 0.0,
+                    "k": 0.0557,
+                    "type": "harmonic"
+                },
+                "1 2": {
+                    "req": 0.0,
+                    "k": 0.0557,
+                    "type": "harmonic"
+                },
+                "0 1": {
+                    "req": 0.0,
+                    "k": 0.0557,
+                    "type": "harmonic"
+                }
+            },
+            "Ninit": 8,
+            "structure": "polymers.aam"
+        }
+    },
+    "energy": {
+        "nonbonded": {
+            "coulomb": {
+                "epsr": 78.7
+            }
+        }
+    }
+}
