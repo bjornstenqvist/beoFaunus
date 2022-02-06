@@ -1,0 +1,1 @@
+/usr/bin/c++  -funroll-loops -Wall -Wno-unknown-pragmas -Wextra -Wno-unused-parameter -Wno-reorder -O2 -g -D_ndebug  -rdynamic CMakeFiles/example_membrane.dir/membrane.cpp.o  -o membrane  -Wl,-rpath,/home/work/BackupWork/NewAllGo/src ../libfaunus.so ../xdrfile/libxdrfile.a 

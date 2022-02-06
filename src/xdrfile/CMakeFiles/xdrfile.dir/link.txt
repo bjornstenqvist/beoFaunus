@@ -1,0 +1,2 @@
+/usr/bin/ar qc libxdrfile.a  CMakeFiles/xdrfile.dir/xdrfile.c.o CMakeFiles/xdrfile.dir/xdrfile_xtc.c.o CMakeFiles/xdrfile.dir/xdrfile_trr.c.o
+/usr/bin/ranlib libxdrfile.a
